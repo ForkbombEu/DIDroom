@@ -1,7 +1,7 @@
 <div align="center">
 
 <p align="center">
-  <a href="https://forkbomb.solutions/solution/didroom/">
+  <a href="https://forkbomb.solutions/solution/DIDroom/">
     <img src="/images/DIDroom_logo.png" width="370" alt="DIDroom">
   </a>
 </p>
@@ -17,7 +17,8 @@
 
 ## 🎯 Intro and Goals
 
-DIDroom is an open-source multiplatform and multifunctional Identity DID/SSI wallet, compliant with the W3C-DID and W3C-VC standards and with the current “The European Digital Identity Wallet Architecture and Reference Framework” (EUDI – ARF, version 1.0.0 from January 2023) which is the technical core of the eIDAS 2.0 regulation. DIDroom will also have advanced cryptographic and blockchain functions, including signatures, multi-signatures and blockchain interoperability (for Ethereum, Hyperledger Fabric and Sawtooth, and Planetmint) via Oracles.
+DIDroom is an open-source multiplatform and multifunctional Identity DID/SSI wallet.
+DIDroom will also have advanced cryptographic and blockchain functions, including signatures, multi-signatures and blockchain interoperability (for Ethereum, Hyperledger Fabric and Sawtooth, and Planetmint) via Oracles.
 
 ### Design goals
 
@@ -33,9 +34,33 @@ DIDroom is an open-source multiplatform and multifunctional Identity DID/SSI wal
 
 The user stories in form of text are avaialble [here](https://github.com/forkbombEu/signroom/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%92%86%E2%80%8D%E2%99%80%EF%B8%8F+User+story%22+sort%3Acreated-asc) they are live and in progress.
 
-In the meantime the user journey are also under development available on [here](https://www.figma.com/file/Z2z4uAFbQY8lnv06bK017z/DIDroom---User-stories?type=whiteboard&node-id=0%3A1&t=dp0BQVHrNWaO47KK-1) to give an example of the outcomes: 
+In the meantime the user journey are also under development available on [here](https://www.figma.com/file/Z2z4uAFbQY8lnv06bK017z/DidRoom---User-stories?type=whiteboard&node-id=0%3A1&t=dp0BQVHrNWaO47KK-1) to give an example of the outcomes: 
 
 ![User story example](/images/003.us.png)
+
+## ✋ Constraints
+
+### Regulatory Constraints
+ - DidRoom's architecture is subject to the eIDAS 2.0 regulation, ensuring alignment with the latest identity and electronic signature standards within the European Union.
+ - The architecture adheres to "The European Digital Identity Wallet Architecture and Reference Framework" (EUDI-ARF, version 1.0.0), a pivotal component of the eIDAS 2.0 regulation.
+
+### Technical Constraints
+ - DIDroom is required to support the W3C-DID and W3C-VC standards to ensure compatibility with identity and verifiable credential systems.
+ - The cryptographic capabilities of Zenroom will be utilized for various functions, including signatures, hashes, multisignatures, and zero-knowledge proofs.
+ - The architecture must support a federated 4-levels W3C-DID method with multiple storage mechanisms, such as filesystems, databases, blockchains, Git, and IPFS.
+ - The architecture must accommodate the blockchain interoperability requirements for Ethereum, Hyperledger Fabric, Sawtooth, and Planetmint.
+
+### Organizational Constraints
+ - The architecture leverages open-source components developed by the Dyne.org Foundation
+ - DIDroom is based on components of the Zenroom ecosystem, including the cryptographic virtual machine "Zenroom" and Dyne.org's W3C-DID implementation.
+
+### Integration Constraints
+- Zenswarm, a blockchain oracle technology, will be used for blockchain interoperability and off-chain cryptography. It features a built-in off-chain consensus algorithm and is developed using Zenroom at its core.
+- Signroom, a web-based service, will be integrated to enable users to sign documents and objects using W3C-DID identities.
+
+### Compatibility and Security Constraints
+- DidRoom must be compatible with modern smartphones and the latest mobile operating systems.
+- The wallet's operation must be secure on the client side, ensuring data privacy and protection. All cryptographic operations and sensitive data handling should occur within the secure environment of the user's device.
 
 ## 🏗️ Building blocks
 

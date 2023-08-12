@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://forkbomb.solutions/solution/didroom/">
-    <img src="/images/DIDroom_logo.png" width="170">
+    <img src="/images/DIDroom_logo.png" width="370">
   </a>
 </p>
 

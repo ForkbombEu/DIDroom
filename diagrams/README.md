@@ -14,4 +14,7 @@ java -jar plantuml.jar -DRELATIVE_INCLUDE="." *.puml
 head your browser to [kroki](https://kroki.io) use the `c4plantuml` language and copy paste the source code to get a valid diagram url
 
 ## System Context diagram for DIDroom
-![](./01_system_context.png)
+![Context diagram image](./01_system_context.png)
+
+## Containers diagram for DIDroom
+![Container diagram image](./02_container.png)

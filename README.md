@@ -117,6 +117,8 @@ Key Characteristics:
 ***
 ## 🏗️ Building blocks
 
+![Container diagram image](/diagrams/02_container.png)
+
 DIDroom is based on a stack of open-source components and middlewares implemented by the Dyne.org Foundation during several H2020 and EC-funded research projects. The relevant components of the Zenroom ecosystem are:
 
  - [dyne/zenroom](https://github.com/dyne/zenroom) **The cryptographic virtual machine “Zenroom”** 

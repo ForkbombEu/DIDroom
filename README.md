@@ -12,6 +12,32 @@
 
 
 ---
+
+DIDroom is an open-source multiplatform and multifunctional Identity DID/SSI wallet.
+DIDroom will also have advanced cryptographic and blockchain functions, including signatures, multi-signatures and blockchain interoperability (for Ethereum, Hyperledger Fabric and Sawtooth, and Planetmint) via Oracles.
+<br><br>
+
+<div id="toc">
+
+### 🚩 Table of Contents
+
+- [🎯 Intro and Goals](#-intro-and-goals)
+- [✋ Constraints](#-constraints)
+- [🔍 Scope and context](#-scope-and-context)
+- [🏗️ Building blocks](#-building-blocks)
+- [🎮 Quick start](#-quick-start)
+- [🚑 Community & support](#-community--support)
+- [🐋 Docker](#-docker)
+- [🐝 API](#-api)
+- [🔧 Configuration](#-configuration)
+- [📋 Testing](#-testing)
+- [🐛 Troubleshooting & debugging](#-troubleshooting--debugging)
+- [😍 Acknowledgements](#-acknowledgements)
+- [👤 Contributing](#-contributing)
+- [💼 License](#-license)
+
+</div>
+
 <br><br>
 
 
@@ -38,6 +64,10 @@ In the meantime the user journey are also under development available on [here](
 
 ![User story example](/images/003.us.png)
 
+**[🔝 back to top](#toc)**
+
+***
+
 ## ✋ Constraints
 
 ### Regulatory Constraints
@@ -62,6 +92,9 @@ In the meantime the user journey are also under development available on [here](
 - DidRoom must be compatible with modern smartphones and the latest mobile operating systems.
 - The wallet's operation must be secure on the client side, ensuring data privacy and protection. All cryptographic operations and sensitive data handling should occur within the secure environment of the user's device.
 
+**[🔝 back to top](#toc)**
+
+***
 ## 🔍 Scope and context
 
 ![System Context diagram for DIDroom](https://kroki.io/c4plantuml/svg/eNptVMtu2zAQvPsrtrnUBhzn0HxAHrYTA0VqRA0C9GLQ5MoiQpECd2XH-fouKTlK2ty05D5mZ4a6IlaR29qNvlmvXWsQbi83t8EzvvKsSRcjtuwQiiMx1tBfgbFqF1UNZYgwX81jCPVotMZIwY9bwjiFs_4YniQ8k_jag_V7a1rl4FAFQL9TOyQ4WK6AK4S5NY-pgLpRHKBWXlJAeQNaBsfgUqKNYFCjxMrZNzRgjQS2tDIexjKWJrmE0JXnFPYY0e58n8VHGBfFagI6Yj5QjmYwO5uc0AvavdW4aWIQsHmTojuC01G_TYg75e2bYhtSAH17pVkCrhRDyzYhpE_rNU6x0JYXFBCKuwUNOitQoZ9P6RpFnq2zVMmpbiOCUaw6KmTKQJ0wkkintEYn1NhYk9gfdEigx72KT162EECkWyJBP5G6vnCzeOVUnAqPHmeyJDz_uD2XLqnDUkiLAtnA5bnDPTo63UKNXAXTYapbx7YR25BwkSSsUVdCFtU0BWp1BYrgznLefLVeFu_A8_w39HRQMaH_03-m4Tcu6BfpYxPdSkv7zDK1TRMii7sYY2gE31ZoFyUylIXwE7GVXvdHuXNodrL7Um2j1VMo1IFD4GoKa6c8ci1NpoCsZ58R9aoICIkwevEwhZIFGUIos770hUsWHz1-MoAIG8oyS51FfVc8kTFI_pXWVj6y0lNI7Au11u-66Rnrdxpsnl9NPDYc5KU2ldVQitlkICW1H9H1D3VwirxUyqif5quL68el5KW0_1_EPyU5bXOj9MvA05Aivwxqa0yNHxfF74vr9aoHsHmQh1ltQxzc2jnvBCTZah60VHvuxwypH0zSoxgV97-eNz8Xd4uH-XgyukJv5A_2F4wItP8=)
@@ -79,6 +112,9 @@ Key Characteristics:
 - `Secure Interactions`: The service provider is ensured that interactions with users occur in a secure and privacy-preserving manner. The DidRoom system enables secure communication, data sharing, and verification of user identity and claims.
 - `Integration with Blockchain Networks`: If required, the service provider can integrate their services with external blockchain networks (such as Ethereum, Hyperledger Fabric, Sawtooth, Planetmint) through the DidRoom system, by using the zenswarm oracles interoperability capabilities.
 
+**[🔝 back to top](#toc)**
+
+***
 ## 🏗️ Building blocks
 
 DIDroom is based on a stack of open-source components and middlewares implemented by the Dyne.org Foundation during several H2020 and EC-funded research projects. The relevant components of the Zenroom ecosystem are:
@@ -104,29 +140,6 @@ DIDroom is based on a stack of open-source components and middlewares implemente
    Open source, modular, easy to extend, web-based service, leveraging Zenroom’s cryptographic capabilities, allowing users sign documents and objects, using W3C-DID identities.
 
 
-## Requirement overviews
-
-
-
-<br>
-
-<div id="toc">
-
-### 🚩 Table of Contents
-
-- [💾 Install](#-install)
-- [🎮 Quick start](#-quick-start)
-- [🚑 Community & support](#-community--support)
-- [🐋 Docker](#-docker)
-- [🐝 API](#-api)
-- [🔧 Configuration](#-configuration)
-- [📋 Testing](#-testing)
-- [🐛 Troubleshooting & debugging](#-troubleshooting--debugging)
-- [😍 Acknowledgements](#-acknowledgements)
-- [👤 Contributing](#-contributing)
-- [💼 License](#-license)
-
-</div>
 
 ***
 ## 💾 Install

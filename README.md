@@ -62,6 +62,23 @@ In the meantime the user journey are also under development available on [here](
 - DidRoom must be compatible with modern smartphones and the latest mobile operating systems.
 - The wallet's operation must be secure on the client side, ensuring data privacy and protection. All cryptographic operations and sensitive data handling should occur within the secure environment of the user's device.
 
+## 🔍 Scope and context
+
+![System Context diagram for DIDroom](https://kroki.io/c4plantuml/svg/eNptVMtu2zAQvPsrtrnUBhzn0HxAHrYTA0VqRA0C9GLQ5MoiQpECd2XH-fouKTlK2ty05D5mZ4a6IlaR29qNvlmvXWsQbi83t8EzvvKsSRcjtuwQiiMx1tBfgbFqF1UNZYgwX81jCPVotMZIwY9bwjiFs_4YniQ8k_jag_V7a1rl4FAFQL9TOyQ4WK6AK4S5NY-pgLpRHKBWXlJAeQNaBsfgUqKNYFCjxMrZNzRgjQS2tDIexjKWJrmE0JXnFPYY0e58n8VHGBfFagI6Yj5QjmYwO5uc0AvavdW4aWIQsHmTojuC01G_TYg75e2bYhtSAH17pVkCrhRDyzYhpE_rNU6x0JYXFBCKuwUNOitQoZ9P6RpFnq2zVMmpbiOCUaw6KmTKQJ0wkkintEYn1NhYk9gfdEigx72KT162EECkWyJBP5G6vnCzeOVUnAqPHmeyJDz_uD2XLqnDUkiLAtnA5bnDPTo63UKNXAXTYapbx7YR25BwkSSsUVdCFtU0BWp1BYrgznLefLVeFu_A8_w39HRQMaH_03-m4Tcu6BfpYxPdSkv7zDK1TRMii7sYY2gE31ZoFyUylIXwE7GVXvdHuXNodrL7Um2j1VMo1IFD4GoKa6c8ci1NpoCsZ58R9aoICIkwevEwhZIFGUIos770hUsWHz1-MoAIG8oyS51FfVc8kTFI_pXWVj6y0lNI7Au11u-66Rnrdxpsnl9NPDYc5KU2ldVQitlkICW1H9H1D3VwirxUyqif5quL68el5KW0_1_EPyU5bXOj9MvA05Aivwxqa0yNHxfF74vr9aoHsHmQh1ltQxzc2jnvBCTZah60VHvuxwypH0zSoxgV97-eNz8Xd4uH-XgyukJv5A_2F4wItP8=)
+
+**`DidRoom User`**: An external actor who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials. The DidRoom user interacts with the system to create, update, and manage their digital identity attributes, as well as to generate and control verifiable credentials.
+
+The DidRoom user is and individual seeking to leverage decentralized identity technologies for secure and verifiable digital interactions. They interact with the DidRoom system to manage their identity-related data and utilize the cryptographic and blockchain capabilities provided by the system.
+
+**`DidRoom Service Provider`** An external actor that utilizes the DidRoom platform to create and deliver services to users. The service provider engages with the DidRoom system to establish secure data contracts with their users, ensuring the authenticity, integrity, and privacy of user data. The service provider may include individuals, organizations, or entities that offer services that require secure identity and data interactions.
+
+Key Characteristics:
+- `Service Creation`: The service provider utilizes the DidRoom system to create services that require identity and data verification. These services may involve user interactions, transactions, verifiable claims, or any other form of secure digital activity.
+- `Data Contracts`: The service provider establishes data contracts with their users, outlining the mandatory and optional attributes for the use of the service and the handling of user data. These contracts are secured through the cryptographic capabilities of the DidRoom system.
+- `Verifiable Claims`: The service provider leverages the verifiable credentials and cryptographic features of the DidRoom system to issue and verify claims about users. These verifiable claims can be used to attest to the authenticity of user attributes or transactions.
+- `Secure Interactions`: The service provider is ensured that interactions with users occur in a secure and privacy-preserving manner. The DidRoom system enables secure communication, data sharing, and verification of user identity and claims.
+- `Integration with Blockchain Networks`: If required, the service provider can integrate their services with external blockchain networks (such as Ethereum, Hyperledger Fabric, Sawtooth, Planetmint) through the DidRoom system, by using the zenswarm oracles interoperability capabilities.
+
 ## 🏗️ Building blocks
 
 DIDroom is based on a stack of open-source components and middlewares implemented by the Dyne.org Foundation during several H2020 and EC-funded research projects. The relevant components of the Zenroom ecosystem are:

@@ -26,6 +26,8 @@ DIDroom will also have advanced cryptographic and blockchain functions, includin
 - [🔍 Scope and context](#-scope-and-context)
 - [📐 Architectural overview](#-architectural-overview)
 - [🏗️ Building blocks](#-building-blocks)
+- [🖼️ Scenarios](#-scenarios)
+- [🚀 Deployment](#-deployment)
 - [📑 Glossary](#-glossary)
 - [🚑 Community & support](#-community--support)
 - [😍 Acknowledgements](#-acknowledgements)
@@ -156,8 +158,49 @@ DIDroom is based on a stack of open-source components and middlewares implemente
  - [forkbombeu/signroom](https://github.com/forkbombeu/signroom) **Signroom: Advanced electronic signature service**
    Open source, modular, easy to extend, web-based service, leveraging Zenroom’s cryptographic capabilities, allowing users sign documents and objects, using W3C-DID identities.
 
+**[🔝 back to top](#toc)**
+
 ***
 
+## - [🖼️ Scenarios](#-scenarios)
+
+### User stories [link](https://github.com/forkbombEu/signroom/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%92%86%E2%80%8D%E2%99%80%EF%B8%8F+User+story%22+sort%3Acreated-asc) 
+
+### User journeys WIP [link](https://www.figma.com/file/Z2z4uAFbQY8lnv06bK017z/DidRoom---User-stories?type=whiteboard&node-id=0%3A1&t=dp0BQVHrNWaO47KK-1)
+
+**[🔝 back to top](#toc)**
+
+*** 
+
+## 🚀 Deployment
+
+**Structure and view are WIP and TBD**
+
+The deployment strategy for the DidRoom system involves utilizing containerization technology and an on-premise approach, facilitated by Docker. This strategy aims to provide scalability, flexibility, and consistent environments across different stages of deployment.
+
+### Containerization with Docker
+Containers are employed to encapsulate the DidRoom application and its dependencies, ensuring consistent behavior across various environments, from development to production. Docker, a widely-used containerization platform, is employed to create, deploy, and manage containers. This approach enhances deployment efficiency and simplifies environment setup.
+
+Key Aspects of Containerization:
+  - `Isolation`: Each component of the DidRoom system, including services and middleware, is encapsulated within separate containers, maintaining isolation and preventing interference between components.
+  - `Portability`: Docker containers encapsulate the entire runtime environment, ensuring the application operates consistently regardless of the hosting environment.
+  - `Scalability`: The containerized architecture allows for horizontal scaling, enabling the system to accommodate varying levels of workload.
+
+### On-Premise Deployment
+
+The deployment of DidRoom is executed on-premise, which means the system is hosted and managed within the organization's infrastructure. This approach offers control over data privacy, security, and customization, including the concept of "white label" deployment.
+
+Benefits of On-Premise Deployment:
+
+  - `Data Control`: Sensitivity to data privacy and security requirements can be met by maintaining control over data within the organization's environment.
+  - `Customization`: The deployment environment can be tailored to meet specific organizational needs, configurations, and even offer white-label deployment for branding purposes.
+  - `Performance`: On-premise deployment often offers lower latency and improved performance, particularly for critical and real-time applications.
+
+The combination of containerization using Docker and on-premise deployment ensures a reliable and efficient deployment strategy for DidRoom, enabling seamless management and scalability while adhering to security, branding, and customization requirements.
+
+**[🔝 back to top](#toc)**
+
+***
 ## 📑 Glossary
 
 **Blockchain Networks**: Refers to distributed and decentralized networks that utilize blockchain technology for secure and transparent record-keeping. Examples include Ethereum, Hyperledger Fabric, Sawtooth, and Planetmint.

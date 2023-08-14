@@ -24,6 +24,7 @@ DIDroom will also have advanced cryptographic and blockchain functions, includin
 - [🎯 Intro and Goals](#-intro-and-goals)
 - [✋ Constraints](#-constraints)
 - [🔍 Scope and context](#-scope-and-context)
+- [📐 Architectural overview](#-architectural-overview)
 - [🏗️ Building blocks](#-building-blocks)
 - [🎮 Quick start](#-quick-start)
 - [🚑 Community & support](#-community--support)
@@ -111,6 +112,25 @@ Key Characteristics:
 - `Verifiable Claims`: The service provider leverages the verifiable credentials and cryptographic features of the DidRoom system to issue and verify claims about users. These verifiable claims can be used to attest to the authenticity of user attributes or transactions.
 - `Secure Interactions`: The service provider is ensured that interactions with users occur in a secure and privacy-preserving manner. The DidRoom system enables secure communication, data sharing, and verification of user identity and claims.
 - `Integration with Blockchain Networks`: If required, the service provider can integrate their services with external blockchain networks (such as Ethereum, Hyperledger Fabric, Sawtooth, Planetmint) through the DidRoom system, by using the zenswarm oracles interoperability capabilities.
+
+**[🔝 back to top](#toc)**
+
+***
+## 📐 Architectural overview
+
+DidRoom's architecture is designed to achieve the following design goals:
+
+### Secure
+DidRoom is engineered to protect information and data to ensure access is limited appropriately based on user types and levels. It is designed to thwart attack patterns initiated by malicious actors. The use of Zenroom's cryptographic capabilities and secure communication protocols contributes to data protection.
+
+### Usable
+Usability is a primary concern of DidRoom's architecture. The system is designed to enable users to perform tasks safely, effectively, and efficiently. The user interface is carefully crafted to enhance the user experience while adhering to security principles. Signroom, the web-based service, ensures that cryptographic operations are user-friendly and accessible.
+
+### Operable
+Operability is ensured by designing DidRoom to be easy to deploy, operate, monitor, and control. The architecture employs established deployment patterns and clear operational interfaces. The integration of Zenswarm as a blockchain oracle solution contributes to the system's ability to seamlessly interact with different blockchains. Also the dashboard will allow to provision new oracle nodes and easily access to information like auditing logs.
+
+### Reliable
+DidRoom is engineered to reliably perform specified functions under defined conditions without interruptions or failures. The architecture is designed with fault tolerance and redundancy in mind. The use of Dyne.org's W3C-DID implementation with its built-in explorer enhances the reliability of identity-related operations.
 
 **[🔝 back to top](#toc)**
 

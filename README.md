@@ -262,6 +262,10 @@ Some definitions are borrowed from [ISO/IEC TS 25052-1](https://www.iso.org/obp/
 
 Some definitions comes also from L. Bass, P. Clements, and R. Kazman, Software architecture in practice, 4th ed. Addison-Wesley Professional, 2021.
 
+<img align="left" src="./images/logo-ngi-trustchain-positive-rgb-PNG.png" width="145">
+
+Supported by [NGI TRUSTCHAIN](https://trustchain.ngi.eu/), which is made possible with financial support from the European Commission's [Next Generation Internet](https://ngi.eu/) programme.
+
 **[🔝 back to top](#toc)**
 
 ***

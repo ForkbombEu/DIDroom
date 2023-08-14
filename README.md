@@ -198,9 +198,7 @@ DIDroom is based on a stack of open-source components and middlewares implemente
 
 **[🚩 Issues](https://github.com/forkbombeu/signroom/issues)** - Bugs end errors you encounter using DIDroom.
 
-**[💬 Discussions](../../discussions)** - Get help, ask questions, request features, and discuss DIDroom.
-
-**[📖 Example](https://github.com/DIDroom/example)** - An example repository that uses DIDroom.
+**[📖 Example](https://github.com/NGI-TRUSTCHAIN/DidRoom/example)** - [TBD].
 
 **[🔝 back to top](#toc)**
 

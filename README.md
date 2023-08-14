@@ -162,7 +162,7 @@ DIDroom is based on a stack of open-source components and middlewares implemente
 
 ***
 
-## - [🖼️ Scenarios](#-scenarios)
+## 🖼️ Scenarios
 
 ### User stories [link](https://github.com/forkbombEu/signroom/issues?q=is%3Aissue+is%3Aopen+label%3A%22%F0%9F%92%86%E2%80%8D%E2%99%80%EF%B8%8F+User+story%22+sort%3Acreated-asc) 
 

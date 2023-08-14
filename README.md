@@ -26,13 +26,8 @@ DIDroom will also have advanced cryptographic and blockchain functions, includin
 - [🔍 Scope and context](#-scope-and-context)
 - [📐 Architectural overview](#-architectural-overview)
 - [🏗️ Building blocks](#-building-blocks)
-- [🎮 Quick start](#-quick-start)
+- [📑 Glossary](#-glossary)
 - [🚑 Community & support](#-community--support)
-- [🐋 Docker](#-docker)
-- [🐝 API](#-api)
-- [🔧 Configuration](#-configuration)
-- [📋 Testing](#-testing)
-- [🐛 Troubleshooting & debugging](#-troubleshooting--debugging)
 - [😍 Acknowledgements](#-acknowledgements)
 - [👤 Contributing](#-contributing)
 - [💼 License](#-license)
@@ -161,23 +156,36 @@ DIDroom is based on a stack of open-source components and middlewares implemente
  - [forkbombeu/signroom](https://github.com/forkbombeu/signroom) **Signroom: Advanced electronic signature service**
    Open source, modular, easy to extend, web-based service, leveraging Zenroom’s cryptographic capabilities, allowing users sign documents and objects, using W3C-DID identities.
 
-
-
 ***
-## 💾 Install
-```TBD```
 
+## 📑 Glossary
 
-**[🔝 back to top](#toc)**
+**Blockchain Networks**: Refers to distributed and decentralized networks that utilize blockchain technology for secure and transparent record-keeping. Examples include Ethereum, Hyperledger Fabric, Sawtooth, and Planetmint.
 
-***
-## 🎮 Quick start
+**Blockchain Oracles**: Services or technologies that enable smart contracts or decentralized applications (DApps) to interact with external data sources, APIs, or events from the real world. Blockchain oracles provide the means for blockchain systems to obtain off-chain information and make informed decisions.
 
-To start using DIDroom run the following command in the root folder
+**Decentralized Identifier (DID)**: A globally unique, self-sovereign identifier that enables individuals and entities to have control over their digital identities without relying on centralized authorities.
 
-```bash
-docker compose up
-```
+**EUDI-ARF**: Acronym for "The European Digital Identity Wallet Architecture and Reference Framework," a technical core of the eIDAS 2.0 regulation that outlines standards for digital identity wallets.
+
+**eIDAS 2.0 Regulation**: The updated version of the eIDAS (electronic Identification, Authentication and Trust Services) regulation that sets standards for electronic identification and trusted services within the European Union.
+
+**Self-Sovereign Identity (SSI)**: A decentralized identity model that enables individuals to have full control over their digital identity and personal data. SSI allows users to manage and share verifiable credentials without the need for intermediaries.
+
+**Verifiable Credentials (VC)**: Digital attestations that enable the issuance and verification of claims about a subject's identity, attributes, or qualifications.
+
+**Wallet**: In the context of DidRoom, a software application or platform that allows users to manage their digital identities, store cryptographic keys, create and manage DIDs, and interact with blockchain networks and verifiable credentials.
+
+**Zero-Knowledge Proofs**: Cryptographic methods that allow a party to prove knowledge of a certain value or statement without revealing the actual value itself. Zero-knowledge proofs enhance privacy and security by demonstrating knowledge without disclosing sensitive information.
+
+**W3C-DID**: Abbreviation for "W3C Decentralized Identifier," a standard by the World Wide Web Consortium (W3C) for creating, managing, and resolving decentralized identifiers.
+
+**W3C-VC**: Abbreviation for "W3C Verifiable Credentials," a standard by the World Wide Web Consortium (W3C) for creating and verifying digital credentials in a secure and interoperable manner.
+
+**Zenroom**: A cryptographic virtual machine developed by Dyne.org Foundation, capable of performing various cryptographic operations and supporting blockchain interoperability.
+
+**Zenswarm**: A blockchain oracle technology developed for blockchain interoperability and off-chain cryptography, utilizing Zenroom at its core.
+
 
 **[🔝 back to top](#toc)**
 
@@ -186,9 +194,9 @@ docker compose up
 
 **[📝 Documentation](#toc)** - Getting started and more.
 
-**[🌱 Ecosystem](https://github.com/dyne/ecosystem)** - Plugins, resources, and more.
+**[🌱 Ecosystem](https://forkbomb.solutions)** - Resources, and more.
 
-**[🚩 Issues](../../issues)** - Bugs end errors you encounter using DIDroom.
+**[🚩 Issues](https://github.com/forkbombeu/signroom/issues)** - Bugs end errors you encounter using DIDroom.
 
 **[💬 Discussions](../../discussions)** - Get help, ask questions, request features, and discuss DIDroom.
 
@@ -197,57 +205,21 @@ docker compose up
 **[🔝 back to top](#toc)**
 
 ***
-## 🐋 Docker
-
-Please refer to [DOCKER PACKAGES](../../packages)
-
-
-**[🔝 back to top](#toc)**
-
-***
-## 🐝 API
-
-Available endpoints
-
-### POST /token
-
-Execute a transaction with some amount
-
-**Parameters**
-
-|          Name | Required |  Type   | Description       | 
-| -------------:|:--------:|:-------:| ------------------|
-|       `token` | required | string  | Type of token. Accepted values `idea` or `strength`  |
-|       `amount`| required | number  | Transaction's token amount |
-|       `owner` | required | ULID    | The ULID of the Agent's owner |
- 
-### GET /token/${request.token}/${request.owner}
-
-Retrieves the actual value of the token type for the specified owner
-
-
-**[🔝 back to top](#toc)**
-
-***
-## 🔧 Configuration
-
-**[🔝 back to top](#toc)**
-
-***
-
-## 📋 Testing
-
-**[🔝 back to top](#toc)**
-
-***
-## 🐛 Troubleshooting & debugging
-
-**[🔝 back to top](#toc)**
-
-***
 ## 😍 Acknowledgements
 
 Copyleft 🄯 2023 by [The Forkbomb Company](https://www.forkbomb.solutions), Amsterdam
+
+This documentation is loosely based on the [arc42 template](https://arc42.org/overview)
+
+The diagrams follows the [C4 model](https://c4model.com/)
+
+Diagrams are generate with [C4-Plantuml](https://github.com/plantuml-stdlib/C4-PlantUML) and PlantUML
+
+Diagrams are served via [kroki](https://kroki.io/)
+
+Some definitions are borrowed from [ISO/IEC TS 25052-1](https://www.iso.org/obp/ui/#iso:std:iso-iec:25010:dis:ed-2:v1:en): 2022(en) Systems and software engineering — Systems and software Quality Requirements and Evaluation
+
+Some definitions comes also from L. Bass, P. Clements, and R. Kazman, Software architecture in practice, 4th ed. Addison-Wesley Professional, 2021.
 
 **[🔝 back to top](#toc)**
 

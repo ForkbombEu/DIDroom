@@ -1,0 +1,31 @@
+@startuml
+!include C4_Container.puml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+title DIDroom details
+ContainerDb(db, "Signroom DB", "Distributed Sqlite Database")
+
+Container_Boundary(didroom, "DIDroom backend") {
+  Component(starters, "Starters base", "Golang, pocketbase", "Authentication features")
+  Component(custom_api, "Custom API", "Golang, echo", "Credentials CRUD")
+  Component(zenflows_crypto, "Zenflows-crypto", "Zencode", "Support contracts")
+}
+
+
+System_Ext(did, "Dyne.org W3C-DID")
+System_Ext(blockchain, "Blockchain node")
+System_Ext(zenswarm, "Zenswarm")
+System_Ext(service, "External software of the service provider")
+Rel(starters, zenflows_crypto, "Embed", "Zenroom bindings")
+Rel(custom_api, starters, "Uses", "cruft.github.io/cruft/")
+
+Rel(starters, did, "Uses", "Creates DID Documents")
+Rel_Back(custom_api, did, "Reads", "Verifies DID identities")
+
+Rel_Back(service, custom_api, "Consume", "REST/API")
+
+
+Rel_Back_Neighbor(db, custom_api, "Reads only", "sync, DB Connector")
+
+Rel(custom_api, blockchain, "Triggers/Reads")
+Rel(blockchain, zenswarm, "Send event")
+@enduml

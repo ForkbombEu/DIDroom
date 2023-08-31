@@ -148,7 +148,7 @@ DIDroom is based on a stack of open-source components and middlewares implemente
    
   |  resource|URI|
   |-----|-----|
-  | intro | https://forkbomb.eu/products/w3c-did |
+  | intro | https://forkbomb.solutions/products/w3c-did |
   | specification  | https://dyne.github.io/W3C-DID |
   | DID explorer | https://explorer.did.dyne.org |
 

@@ -1,0 +1,35 @@
+@startuml
+!include C4_Container.puml
+
+title Container diagram for Forkbomb Wallet ID and credential 
+
+Person(user, "DIDroom User", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials.")
+Person(verifier, "Verifier User", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials.")
+
+
+
+System_Boundary(didroom, "DIDroom") {
+  ContainerDb(db, "Database", "Distributed Sqlite Database", "Stores JUST public and NON sensitive data, like settings, schemas and commodities for the backoffice usage")
+  Container(didroom_backend, "DIDroom backend", "Zenroom, golang", "Will be in charge for the backoffice of the service providers and allow to define Data contracts and services. It is also the place to see deployment and Audit logs. Exposes REST API to allow third party software to consume the defined identification/signing services.")
+  Container(wallet, "Wallet App", "nativescript, Zenroom native, svelte, android, iOS", "This is a hybrid app that handles secure crypto environment for the user data, and runs the Zencode smart contracts direclty on the DIDroom users devices")
+  Container(verifier_app, "Verifier App", "nativescript, Zenroom native, svelte, android, iOS", "This is a hybrid app that handles secure crypto environment for verify credentials and run the Zencode smart contracts direclty on the DIDroom users devices")
+}
+
+
+System_Ext(did, "Dyne.org W3C-DID", "Federated 4-levels W3C-DID method with multiple storage mechanisms, such as Git and IPFS")
+System_Ext(zenswarm, "Zenswarm", "Blockchain oracle that support interoperability with Ethereum, Hyperledger Fabric, Sawtooth, Planetmint, etc.")
+System_Ext(service, "External software of the service provider", "Engages with DidRoom to offer secure services and establish data contracts with its users, leveraging the system's identity and cryptographic features")
+
+Rel(user, wallet, "Compliant", "EUDI/ARF")
+Rel(verifier, verifier_app, "Compliant", "EUDI/ARF")
+Rel_Back(service, didroom_backend, "Consume", "REST/API")
+
+Rel_Back_Neighbor(db, didroom_backend, "Reads only", "sync, JDBC")
+
+Rel(didroom_backend, did, "Uses", "DID Documents")
+Rel(wallet, did, "Uses", "DID Documents")
+Rel(verifier_app, did, "Uses", "DID Documents")
+Rel(didroom_backend, zenswarm, "Uses")
+
+SHOW_LEGEND()
+@enduml

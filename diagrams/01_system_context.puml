@@ -3,13 +3,14 @@
 
 title System Context diagram for DIDroom
 
-Person(user, "DIDroom User", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials. .")
-Person(service_provider, "Service provider", "An organization or entity actor that utilizes the DidRoom platform to create and deliver services to establish secure data contracts with their users.")
+Person(user, "DIDroom wallet owner", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials. .")
+Person(service_provider, "Credential issuer", "An organization or entity actor that utilizes the DidRoom platform to create and deliver services to establish secure data contracts with their users.")
+Person(verifier, "Verifier", "The verifier within DIDroom is typically an external party or service that needs to verify a user's identity or credentials")
 System(didroom, "DIDroom", "(System Under Discussion)")
 
 System_Ext(did, "Dyne.org W3C-DID", "Federated 4-levels W3C-DID method with multiple storage mechanisms, such as Git and IPFS")
 System_Ext(zenswarm, "Zenswarm", "Blockchain oracle that support interoperability with Ethereum, Hyperledger Fabric, Sawtooth, Planetmint, etc.")
-System_Ext(service, "External software of the service provider", "Engages with DidRoom to offer secure services and establish data contracts with its users, leveraging the system's identity and cryptographic features")
+System_Ext(service, "External software of the service provider (eg. Authz server)", "Engages with DidRoom to offer secure services and establish data contracts with its users, leveraging the system's identity and cryptographic features")
 
 Rel(user, didroom, "Uses", "EUDI/ARF")
 Rel(service_provider, didroom, "Uses")

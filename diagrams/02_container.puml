@@ -3,32 +3,42 @@
 
 title Container diagram for DIDroom
 
-Person(user, "DIDroom User", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials. .")
-Person(service_provider, "Service provider", "An organization or entity actor that utilizes the DidRoom platform to create and deliver services to establish secure data contracts with their users.")
+Person(org, "Organization manager", "An organization or entity actor that utilizes the DidRoom platform to create and deliver services to establish secure data contracts with their users.")
+Person(user, "DIDroom wallet holder", "An invidual who engages with the DidRoom system to manage and control their decentralized identifiers (DIDs) and self-sovereign identity (SSI) credentials. .")
+Person(verifier, "Verifier", "The verifier within DIDroom is typically an external party or service that needs to verify a user's identity or credentials")
+System_Ext(issuer, "Credential issuer", "an entity or system responsible for creating, signing, and issuing verifiable credentials")
 
-System_Boundary(didroom, "DIDroom") {
-  Container(signroom, "Signroom Web App", "Typescript, Zenroom WASM, golang", "Will be in charge for the backoffice of the service providers and allow to define Data contracts and services. It is also the place to see deployment and Audit logs.")
-  ContainerDb(db, "Signroom DB", "Distributed Sqlite Database", "Stores JUST public and NON sensitive data, like settings, schemas and commodities for the backoffice usage")
+System_Boundary(didroom_solution, "DIDroom") {
+  Container(wallet, "Holder wallet App", "nativescript, Zenroom native, svelte, android, iOS", "This is a hybrid app that handles secure crypto environment for the user data, and runs the Zencode smart contracts direclty on the DIDroom users devices")
+  Container(didroom, "DIDroom Web App", "Typescript, Zenroom WASM, golang", "Will be in charge for the backoffice of the service providers and allow to define Data contracts and services. It is also the place to see deployment and Audit logs.")
   Container(didroom_backend, "DIDroom backend", "Zenroom, golang", "Exposes REST API to allow third party software to consume the defined identification/signing services.")
-  Container(wallet, "Wallet App", "nativescript, Zenroom native, svelte, android, iOS", "This is a hybrid app that handles secure crypto environment for the user data, and runs the Zencode smart contracts direclty on the DIDroom users devices")
+  ContainerDb(db, "DIDroom DB", "Distributed Sqlite Database", "Stores JUST public and NON sensitive data, like settings, schemas and commodities for the backoffice usage")
+  Container(verifier_app, "Verifier App", "nativescript, Zenroom native, svelte, android, iOS", "This is a hybrid app that handles secure crypto environment for verify credentials and run the Zencode smart contracts direclty on the DIDroom users devices")
 }
 
 
 System_Ext(did, "Dyne.org W3C-DID", "Federated 4-levels W3C-DID method with multiple storage mechanisms, such as Git and IPFS")
-System_Ext(zenswarm, "Zenswarm", "Blockchain oracle that support interoperability with Ethereum, Hyperledger Fabric, Sawtooth, Planetmint, etc.")
-System_Ext(service, "External software of the service provider", "Engages with DidRoom to offer secure services and establish data contracts with its users, leveraging the system's identity and cryptographic features")
+System_Ext(relying_party, "Relying party", "Oracle that will resolve the verifiable presentation and grant proof of the verifiable creadentials")
+System_Ext(auth_server, "Authz server (Zenswarm OR 3rd party software)", "This is in charge to give an `access token` after the request of an holder for a verifiable credential. The access token is sent to the **credential issuer** to authorize to issue the requested credential from the holder.")
 
-Rel(user, wallet, "Uses", "EUDI/ARF")
-Rel(service_provider, signroom, "Uses")
-Rel_Back(service, didroom_backend, "Consume", "REST/API")
+Rel_R(didroom, db, "Reads from and writes to", "sync, JDBC")
+Rel_R(didroom_backend, db, "Reads only", "sync, JDBC")
+Rel(user, wallet, "Compliant", "EUDI/ARF")
+Rel(verifier, verifier_app, "Compliant", "EUDI/ARF")
+Rel(relying_party, verifier_app, "Compliant", "EUDI/ARF")
+Rel_Neighbor(wallet, relying_party, "Verifiable presentation", "EUDI/ARF")
+Rel(auth_server, issuer , "Send", "access token")
+Rel_R(wallet, auth_server, "Ask", "verifiable credential")
+Rel(issuer, wallet, "Issuance", "verifiable credential and sd-jwt")
 
-Rel_Neighbor(signroom, db, "Reads from and writes to", "sync, JDBC")
-Rel_Back_Neighbor(db, didroom_backend, "Reads only", "sync, JDBC")
 
-Rel(signroom, did, "Uses", "DID Documents")
+Rel(org, didroom, "Interacts", "define deploy manage services")
+Rel(didroom, did, "Uses", "DID Documents")
+Rel(verifier_app, did, "Uses", "DID Documents")
 Rel(didroom_backend, did, "Uses", "DID Documents")
 Rel(wallet, did, "Uses", "DID Documents")
-Rel(didroom_backend, zenswarm, "Uses")
+
+Lay_L(didroom_backend, db)
 
 SHOW_LEGEND()
 @enduml

@@ -1,5 +1,41 @@
- 
-# DIDroom backend
+# API draft specs for the DIDroom solution components
+
+Below the very first draft for The
+  - Authorization server
+  - Credential issuer
+  - DIDroom backend
+
+## Authorization server
+
+#### `/api/auth/:serviceId/authorization`
+
+The Wallet holder asks for a access token for a specified service/verifiable credential
+Then the deferred credential issuer will be given an access_token
+
+#### `/auth/access_token`
+
+Validates the provided access token and retrieves details associated with the access token.
+
+
+## Credential issuer
+
+#### `/vc/single/parse`
+Analyzes and verifies the incoming credential request, providing detailed information regarding the request.
+
+#### `/vc/single/issue`
+Generates a verifiable credential or a transaction ID and readies the credential response.
+
+#### `/vci/batch/issue`
+Issues multiple verifiable credentials or transaction IDs in a batch, preparing the corresponding credential responses.
+
+#### `/vci/offer/create`
+Creates an offer for a verifiable credential or transaction ID, detailing terms and information for the issuance.
+
+#### `/vci/offer/info`
+Provides information about an existing offer for a verifiable credential or transaction ID, including terms and associated details.
+
+
+## DIDroom backend
 
 #### Ask to join an organization 
 ```http

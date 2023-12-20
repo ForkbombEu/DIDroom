@@ -1,0 +1,54 @@
+!include <C4/C4_Context>
+
+@startuml
+!include C4_Container.puml
+
+title Container diagram for DIDroom
+
+
+
+Person(org, "Organization manager")
+Person(user, "DIDroom wallet holder")
+Person(verifier, "Verifier")
+
+
+System_Ext(issuer, "Credential issuer")
+System_Ext(relying_party, "Relying party")
+System_Ext(auth_server, "Authorization server")
+
+
+
+System_Ext(did, "Dyne.org W3C-DID")
+
+
+  Container(wallet, "Holder wallet App")
+  Container(didroom, "DIDroom dashboard")
+  Container(didroom_backend, "DIDroom backend")
+  Container(verifier_app, "Verifier App")
+  ContainerDb(db, "DIDroom DB")
+
+
+
+
+Rel_R(didroom, db, "Reads from and writes to", "sync, JDBC")
+Rel_R(didroom_backend, db, "Reads only", "sync, JDBC")
+Rel(user, wallet, "Compliant", "EUDI/ARF")
+Rel(verifier, verifier_app, "Compliant", "EUDI/ARF")
+Rel(relying_party, verifier_app, "Compliant", "EUDI/ARF")
+Rel_Neighbor(wallet, relying_party, "Verifiable presentation", "EUDI/ARF")
+Rel_R(wallet, auth_server, "Ask", "Authorization token")
+Rel(auth_server, wallet , "Send", "Authorization token")
+Rel_R(wallet, issuer, "Send", "Authorization token")
+Rel(issuer, wallet, "Issuance", "Verifiable credential and sd-jwt")
+
+
+Rel(org, didroom, "Interacts", "define deploy manage services")
+Rel(didroom, did, "Uses", "DID Documents")
+Rel(verifier_app, did, "Uses", "DID Documents")
+Rel(didroom_backend, did, "Uses", "DID Documents")
+Rel(wallet, did, "Uses", "DID Documents")
+
+Lay_L(didroom_backend, db)
+
+SHOW_LEGEND()
+@enduml

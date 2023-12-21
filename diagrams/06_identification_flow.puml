@@ -1,0 +1,20 @@
+@startuml
+!theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
+
+title DIDroom identification and authentication flow
+
+autonumber
+
+actor Alice as a
+participant Wallet as w
+participant "Issuer Verifier" as v
+participant "Authorisation Server" as vas
+
+
+a ->> v: Visit the Issuer's/Verifier's Website
+v ->> w: Redirect to wallet or scan a QR code \nInitiate the offering: **openid://VCI** or **VP-offer**\nThe offer is signed
+w ->> v: Fetch the Issuer/Verifier metadata\n**GET https://example.com/.well-known/{issuer/verifier configuration}**\nMetadata is signed
+w ->> w: Verify the Verifiable Attestation(s) on **did:dyne**
+w ->> vas: Continue to the Authorisation Server\n**GET or POST /authorize**
+a -> w : Is happy
+@enduml

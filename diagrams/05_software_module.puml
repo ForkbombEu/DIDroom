@@ -65,7 +65,7 @@ Rel_Back(did, relying_party, " ")
 
 
 Rel_Neighbor(user, wallet, " ")
-Rel_Back_Neighbor(verifier_app, verifier, "EUDI/ARF")
+Rel_Back_Neighbor(verifier_app, verifier, " ")
 
 Rel_Neighbor(wallet, relying_party, " ")
 Rel_Back(verifier_app, relying_party, " ")

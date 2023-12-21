@@ -1,0 +1,45 @@
+@startuml
+
+!theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
+
+actor Alice as U
+participant "Wallet" as W
+box Issuer
+participant "Server Metadata" as metadata
+participant "Pushed Authorization Endpoint" as PAR
+participant "Authorization Endpoint" as AS
+participant "Token Endpoint" as T
+participant "Credential Endpoint" as P
+end box
+autoactivate on
+hide footbox
+
+U -> W: interact
+note over W: Wallet discovers input material\nrequired to request issuance\nof a certain credential 
+W -> metadata: get credential manifests from **.well-known/openid-credential-issuer**
+return credential manifests
+
+W -> W: prepare presentations
+deactivate W
+
+W -> PAR: authorize (claims [determines credential types], (opt) vp_token, ...)
+
+return request_uri
+
+W -> AS: authorize (claims [determines credential types], (opt) vp_token, ... OR request_uri)
+
+note over AS: Issuer will authenticate by using OIDC4VP
+
+AS -> W: request credential presentations
+return vp_token
+
+return code
+
+W -> T: token (code, ...)
+return access_token, id_token(, c_nonce)
+
+W->P: credentials (access_token, type, did, proof)
+
+return credential or acceptance_token(, c_nonce)
+
+@enduml

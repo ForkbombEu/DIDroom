@@ -1,13 +1,13 @@
 @startuml
 !theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
 
-title DIDroom identification and authentication flow
+title DIDroom identification and authz flow
 
 autonumber
 
 actor Alice as a
 participant Wallet as w
-participant "Issuer Verifier" as v
+participant "Zenswarm: Issuer / Verifier" as v
 participant "Authorisation Server" as vas
 
 

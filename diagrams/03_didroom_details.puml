@@ -1,6 +1,7 @@
 @startuml
-!include C4_Container.puml
-!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+!theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
+!include C4/C4_Container.puml
+!include C4/C4_Component.puml
 title DIDroom details
 ContainerDb(db, "Signroom DB", "Distributed Sqlite Database")
 

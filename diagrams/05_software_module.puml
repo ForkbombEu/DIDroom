@@ -1,54 +1,79 @@
-!include <C4/C4_Context>
+@startuml ""
+!theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
+!define DEVICONS https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons
+!define DEVICONS2 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/devicons2
+!define FA5 https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/font-awesome-5
+!define GOV https://raw.githubusercontent.com/tupadr3/plantuml-icon-font-sprites/master/govicons
 
-@startuml
-!include C4_Container.puml
+!include <C4/C4_Container.puml>
+!include <C4/C4_Component.puml>
 
-title Container diagram for DIDroom
+!include DEVICONS/sqllite.puml 
+!include DEVICONS2/typescript.puml 
+!include DEVICONS2/go.puml 
+!include DEVICONS2/git.puml 
+!include FA5/fingerprint.puml
+!include FA5/id_card.puml
+!include FA5/user_tie.puml
+!include FA5/user_check.puml
+!include FA5/mobile.puml
+!include GOV/ribbon.puml
+!include GOV/user_military.puml
+
+' LAYOUT_LEFT_RIGHT()
+
+title Software modules for the DIDroom solutions
+
+' CONTAINERS
+
+Person(org, "\nOrganization\nmanager", $sprite="user_tie")
+Person(user, "\nDIDroom\nWallet holder")
+Person(verifier, "\nVerifier", $sprite="user_check")
+
+Container(wallet, "Holder wallet App", "capacitor", $sprite="mobile")
+Container(verifier_app, "Verifier App", "capacitor", $sprite="mobile")
+
+System_Boundary(dashboard, "DIDroom dashboard"){
+  Component(didroom, "Dashboard\nfrontend", "typescript, zencode", $sprite="typescript")
+  Component(didroom_backend, "Dashboard\nbackend", "golang", $sprite="go")
+  ComponentDb(db, "DIDroom DB", "sqlite", $sprite="sqllite")
+}
+
+System_Ext(did, "Dyne.org W3C-DID", $sprite="git")
+
+System_Boundary(microservices, "Zenswarm microservices"){
+  System_Ext(issuer, "Credential issuer", "slangroom", $sprite="id_card")
+  System_Ext(relying_party, "Relying party", "slangroom", $sprite="ribbon")
+  System_Ext(auth_server, "Authz server", "oAuth 2.0", $sprite="user_military")
+}
+
+
+' RELATIONS
+
+
+Rel(org, didroom, " ")
+Rel_R(db, didroom_backend, " ")
+Rel_R(didroom, db, " ")
+
+Rel(didroom_backend, did, " ")
+
+Rel_Back(did, wallet, " ")
+Rel_Back(did, verifier_app, " ")
+Rel_Back(did, issuer, " ")
+Rel_Back(did, relying_party, " ")
 
 
 
-Person(org, "Organization manager")
-Person(user, "DIDroom wallet holder")
-Person(verifier, "Verifier")
+Rel_Neighbor(user, wallet, " ")
+Rel_Back_Neighbor(verifier_app, verifier, "EUDI/ARF")
 
+Rel_Neighbor(wallet, relying_party, " ")
+Rel_Back(verifier_app, relying_party, " ")
+BiRel(wallet, issuer, " ")
+Rel_Back_Neighbor(wallet, verifier_app, " ")
 
-System_Ext(issuer, "Credential issuer")
-System_Ext(relying_party, "Relying party")
-System_Ext(auth_server, "Authorization server")
-
-
-
-System_Ext(did, "Dyne.org W3C-DID")
-
-
-  Container(wallet, "Holder wallet App")
-  Container(didroom, "DIDroom dashboard")
-  Container(didroom_backend, "DIDroom backend")
-  Container(verifier_app, "Verifier App")
-  ContainerDb(db, "DIDroom DB")
-
-
-
-
-Rel_R(didroom, db, "Reads from and writes to", "sync, JDBC")
-Rel_R(didroom_backend, db, "Reads only", "sync, JDBC")
-Rel(user, wallet, "Compliant", "EUDI/ARF")
-Rel(verifier, verifier_app, "Compliant", "EUDI/ARF")
-Rel(relying_party, verifier_app, "Compliant", "EUDI/ARF")
-Rel_Neighbor(wallet, relying_party, "Verifiable presentation", "EUDI/ARF")
-Rel_R(wallet, auth_server, "Ask", "Authorization token")
-Rel(auth_server, wallet , "Send", "Authorization token")
-Rel_R(wallet, issuer, "Send", "Authorization token")
-Rel(issuer, wallet, "Issuance", "Verifiable credential and sd-jwt")
-
-
-Rel(org, didroom, "Interacts", "define deploy manage services")
-Rel(didroom, did, "Uses", "DID Documents")
-Rel(verifier_app, did, "Uses", "DID Documents")
-Rel(didroom_backend, did, "Uses", "DID Documents")
-Rel(wallet, did, "Uses", "DID Documents")
-
-Lay_L(didroom_backend, db)
+Rel_Neighbor(auth_server, issuer, " ")
 
 SHOW_LEGEND()
+footer drawn with PlantUML v. %version() and C4-PlantUML v. C4Version()
 @enduml

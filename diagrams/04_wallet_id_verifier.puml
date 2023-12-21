@@ -1,5 +1,6 @@
 @startuml
-!include C4_Container.puml
+!theme cb_seq_Purples_9 from https://raw.githubusercontent.com/mweagle/C4-PlantUML-Themes/main/palettes
+!include C4/C4_Container.puml
 
 title Container diagram for Forkbomb Wallet ID and credential 
 

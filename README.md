@@ -134,7 +134,7 @@ DidRoom is engineered to reliably perform specified functions under defined cond
 ***
 ## 🏗️ Building blocks
 
-![Container diagram image](/diagrams/02_container.png)
+![Container diagram image](/diagrams/05_software_module.png)
 
 DIDroom is based on a stack of open-source components and middlewares implemented by the Dyne.org Foundation during several H2020 and EC-funded research projects. The relevant components of the Zenroom ecosystem are:
 

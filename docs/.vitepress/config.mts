@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: "/didroom/",
+  base: "/DIDroom/",
   title: "Didroom ecosystem",
   description: "Empower your Identity strategy: customize, plug, deploy",
 

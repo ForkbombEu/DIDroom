@@ -2,12 +2,13 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/didroom/",
   title: "Didroom ecosystem",
   description: "Empower your Identity strategy: customize, plug, deploy",
 
   lastUpdated: true,
   metaChunk: true,
-  
+
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [

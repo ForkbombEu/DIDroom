@@ -6,11 +6,11 @@ Get started quickly with Didroom by choosing one of the following deployment opt
 
 If you prefer a hassle-free experience and want to start using Didroom without setting up infrastructure, our Software as a Service (SaaS) option is the way to go. Follow these steps to get started:
 
-1. Sign up for a Didroom account on our website.
+### 1. Sign up for a Didroom account on https://beta.signroom.io/register
 
 <video controls="controls" src="https://raw.githubusercontent.com/ForkbombEu/signroom/36065ffc2f8ae76598e653eaf85296ef1f41ba2a/screenshots/videos/registration.webm" />
 
-2. Access the Didroom Control Room/Dashboard to setup you credential services
+### 2. Access the Didroom Control Room/Dashboard to setup you credential services
 
 For more detailed instructions, visit [Software as a Service (SaaS) Quickstart Guide](/quickstart#software-as-a-service-saas).
 

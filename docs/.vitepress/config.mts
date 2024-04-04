@@ -45,9 +45,9 @@ export default defineConfig({
         text: "💡 The solution",
         link: "/solution",
         items: [
-          { text: "Mobile Zencode", link: "/solution#mobile-zencode" },
-          { text: "DiDRoom control room / Dashboard", link: "/solution#didroom-control-room-dashboard", },
-          { text: "Didroom microservices", link: "/solution#didroom-microservices" },
+          { text: "DiDRoom Control Room (Dashboard)", link: "/solution#didroom-control-room-dashboard", },
+		  { text: "Didroom Microservices", link: "/solution#didroom-microservices" },
+          { text: "Didroom Mobile Libs", link: "/solution#mobile-zencode" },
           { text: "Wallet holder app", link: "/solution#wallet-holder-app" },
           { text: "Verifier app", link: "/solution#verifier-app" },
           { text: "Didroom web components", link: "/solution#didroom-web-components" },
@@ -57,11 +57,9 @@ export default defineConfig({
         text: "🎮 Quickstart",
         link: "/quickstart",
         items: [
-          {
-            text: "Software as a Service (SaaS)",
-            link: "/quickstart#software-as-a-service-saas",
-          },
+          { text: "Software as a Service (SaaS)", link: "/quickstart#software-as-a-service-saas"},
           { text: "On-Premise deployment", link: "/quickstart#on-premise-deployment" },
+		  { text: "Microservices deployment and provisioning", link: "/microservices#quickstart" }
         ],
       },
       {

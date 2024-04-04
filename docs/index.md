@@ -9,9 +9,9 @@ hero:
   image:
     src: https://forkbomb.solutions/wp-content/uploads/2023/05/DIDroom_logo.svg
   actions:
-    - theme: alt 
-      text: 🚀 Quickstart
-      link: /getting-started
+    - theme: brand
+      text: 🎮 Quickstart
+      link: /quickstart
     - theme: brand
       text: JOIN NOW ↗
       link: https://beta.signroom.io/register/

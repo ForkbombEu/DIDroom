@@ -13,13 +13,20 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
-      { text: "Reference", link: "/getting-started" },
+      { text: "Reference", link: "/intro" },
+      { text: "Quick start", link: "/quickstart" },
     ],
 
     sidebar: [
       {
-        text: "🚀 Getting started",
-        link: "/getting-started",
+        text: "📖 Introduction ",
+        link: "/intro",
+        items: [
+          { text: "How it works?", link: "/intro#how-it-works", },
+          { text: "Features", link: "/intro#features", },
+          { text: "Integration and flexibility", link: "/intro#integration-and-flexibility", },
+          { text: "How it works?", link: "/intro#how-it-works", },
+        ]
       },
       {
         text: "🏗️ Core Technologies",
@@ -47,13 +54,14 @@ export default defineConfig({
         ],
       },
       {
-        text: "Deployment options",
+        text: "🎮 Quickstart",
+        link: "/quickstart",
         items: [
           {
             text: "Software as a Service (SaaS)",
-            link: "#software-as-a-service-saas",
+            link: "/quickstart#software-as-a-service-saas",
           },
-          { text: "On-Premise deployment", link: "#on-premise-deployment" },
+          { text: "On-Premise deployment", link: "/quickstart#on-premise-deployment" },
         ],
       },
       {

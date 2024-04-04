@@ -19,36 +19,40 @@ export default defineConfig({
     sidebar: [
       {
         text: "🚀 Getting started",
-        link: "/getting-started"
+        link: "/getting-started",
       },
       {
-        text: "Core technologies",
+        text: "🏗️ Core Technologies",
+        link: "/core-technologies",
         items: [
-          { text: "Zenroom", link: "#zenroom" },
-          { text: "Slangroom", link: "#slangroom" },
-          { text: "No-code-room", link: "#no-code-room" },
+          { text: "Zenroom", link: "/core-technologies#%F0%9F%94%90-zenroom" },
+          { text: "Slangroom", link: "/core-technologies#📜-slangroom" },
+          { text: "No-code-room", link: "/core-technologies#%F0%9F%9B%A0%EF%B8%8F-no-code-room-ncr" },
           {
             text: "Dyne.org Decentralized Identifiers (DID) Service",
-            link: "#dyneorg-decentralized-identifiers-did-service",
+            link: "/core-technologies#%F0%9F%94%97-dyne-org-decentralized-identifiers-did-service",
           },
         ],
       },
       {
-        text: "Components",
+        text: "💡 The solution",
+        link: "/solution",
         items: [
-          {
-            text: "DiDRoom control room / Dashboard",
-            link: "#didroom-control-room-dashboard",
-          },
-          { text: "Didroom microservices", link: "#didroom-microservices" },
-          { text: "Wallet holder app", link: "#wallet-holder-app" },
-          { text: "Verifier app", link: "#verifier-app" },
+          { text: "Mobile Zencode", link: "/solution#mobile-zencode" },
+          { text: "DiDRoom control room / Dashboard", link: "/solution#didroom-control-room-dashboard", },
+          { text: "Didroom microservices", link: "/solution#didroom-microservices" },
+          { text: "Wallet holder app", link: "/solution#wallet-holder-app" },
+          { text: "Verifier app", link: "/solution#verifier-app" },
+          { text: "Didroom web components", link: "/solution#didroom-web-components" },
         ],
       },
       {
         text: "Deployment options",
         items: [
-          { text: "Software as a Service (SaaS)", link: "#software-as-a-service-saas", },
+          {
+            text: "Software as a Service (SaaS)",
+            link: "#software-as-a-service-saas",
+          },
           { text: "On-Premise deployment", link: "#on-premise-deployment" },
         ],
       },

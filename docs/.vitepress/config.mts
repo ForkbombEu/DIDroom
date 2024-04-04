@@ -134,7 +134,7 @@ export default defineConfig({
       message:
         'Released under the <a href="https://github.com/forkbombeu/didroom/blob/main/LICENSE">AGPLv3 License</a>.',
       copyright:
-        'Copyleft 🄯 2023-present <a href="https://forkbomb.eu">Forkbomb BV</a>',
+        'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">The Forkbomb Company</a>',
     },
   },
 });

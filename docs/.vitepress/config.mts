@@ -25,7 +25,7 @@ export default defineConfig({
           { text: "How it works?", link: "/intro#how-it-works", },
           { text: "Features", link: "/intro#features", },
           { text: "Integration and flexibility", link: "/intro#integration-and-flexibility", },
-          { text: "How it works?", link: "/intro#how-it-works", },
+          { text: "Architectural overview", link: "/intro#architectural-overview", },
         ]
       },
       {

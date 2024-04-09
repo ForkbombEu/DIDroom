@@ -8,7 +8,7 @@ If you prefer a hassle-free experience and want to start using Didroom without s
 
 ### 1. Sign up for a Didroom account on https://beta.signroom.io/register
 
-<video controls="controls" src="https://raw.githubusercontent.com/ForkbombEu/signroom/36065ffc2f8ae76598e653eaf85296ef1f41ba2a/screenshots/videos/registration.webm" />
+<video controls="controls" src="https://github.com/ForkbombEu/signroom/raw/main/screenshots/videos/registration.webm" />
 
 ### 2. Access the Didroom Control Room/Dashboard to setup you credential services
 

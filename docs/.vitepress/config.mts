@@ -55,10 +55,16 @@ export default defineConfig({
         text: "🎮 Quickstart",
         link: "/quickstart",
         items: [
-          { text: "Software as a Service (SaaS)", link: "/quickstart#software-as-a-service-saas"},
-          { text: "On-Premise deployment", link: "/quickstart#on-premise-deployment" },
-		  { text: "Microservices deployment and provisioning", link: "/microservices/" }
+          { text: "Software as a Service (SaaS)", link: "/quickstart"},
         ],
+      },
+      {
+        text: "🚀 Deployments",
+        items: [
+          { text: "On-Premise deployment", link: "/on-premise" },
+    		  { text: "Setup an issuance flows", link: "/dashboard/" },
+    		  { text: "Deploy your microservices", link: "/microservices/" },
+        ]
       },
       {
         text: "Security and compliance",

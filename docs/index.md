@@ -14,7 +14,7 @@ hero:
       link: /quickstart
     - theme: brand
       text: JOIN NOW ↗
-      link: https://beta.signroom.io/register/
+      link: https://dashboard.didroom.com/register/
     - theme: alt 
       text: What is Didroom? ↗
       link: https://forkbomb.eu/solutions/didroom

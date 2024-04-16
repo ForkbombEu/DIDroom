@@ -3,7 +3,7 @@
 Welcome to Didroom – your gateway to decentralized identity management and secure communication. Didroom empowers individuals and organizations to take control of their digital identities while ensuring privacy and security.
 Whether you're looking to streamline identity verification processes, enhance data security, or enable secure communication channels, Didroom provides the tools and infrastructure you need.
 
-You can quickly test, plug and deploy by using our service at [beta.signroom.io](https://beta.signroom.io) or install the whole ecosystem on-premise on your infrastructure.
+You can quickly test, plug and deploy by using our service at [dashboard.didroom.com](https://dashboard.didroom.com) or install the whole ecosystem on-premise on your infrastructure.
 
 
 ## How It Works

@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: "/DIDroom/",
   title: "Didroom ecosystem",
@@ -10,7 +9,6 @@ export default defineConfig({
   metaChunk: true,
 
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Home", link: "/" },
       { text: "Reference", link: "/intro" },
@@ -59,7 +57,7 @@ export default defineConfig({
         items: [
           { text: "Software as a Service (SaaS)", link: "/quickstart#software-as-a-service-saas"},
           { text: "On-Premise deployment", link: "/quickstart#on-premise-deployment" },
-		  { text: "Microservices deployment and provisioning", link: "/microservices#quickstart" }
+		  { text: "Microservices deployment and provisioning", link: "/microservices/" }
         ],
       },
       {
@@ -121,6 +119,10 @@ export default defineConfig({
           { text: "Contact Information", link: "#contact-information" },
         ],
       },
+      {
+        text: "🤟 Aknowledgements",
+        link: "/aknowledgements"
+      }
     ],
 
     socialLinks: [

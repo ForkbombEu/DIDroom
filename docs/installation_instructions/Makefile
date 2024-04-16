@@ -1,24 +1,25 @@
 .DEFAULT_GOAL := up
 .PHONY: help
 
+NAME = didroom-microservices
+INSTALLER = $(NAME)-installer.sh
 DEPS = git vhs grep awk
 K := $(foreach exec,$(DEPS),\
         $(if $(shell which $(exec)),some string,$(error "🥶 `$(exec)` not found in PATH please install it")))
 
+$(NAME).mp4:
+	vhs $(NAME).tape
 
-didroom-microservices.mp4:
-	vhs didroom-microservices.tape
+$(INSTALLER):
+	@echo "#!/usr/bin/env bash" > $(INSTALLER)
+	@grep Type $(NAME).tape | grep -v "#" | awk -F'"' '{print $$2}' >> $(INSTALLER)
+	@chmod +x $(INSTALLER)
 
-didroom-microservices-install-instruction.md:
-	@echo '```sh' > installer.md
-	@grep Type didroom-microservices.tape | grep -v "#" | awk -F'"' '{print $$2}'   >> installer.md
-	@echo '```' >> installer.md
-
-up: clean didroom-microservices-install-instruction.md didroom-microservices.mp4
+up: clean $(INSTALLER) $(NAME).mp4
 
 clean:
-	@rm -rf didroom-microservices
-	@rm -f didroom-microservices-install-instruction.md
-	@rm -f didroom-microservices.mp4
-	@rm -f didroom-microservices.gif
+	@rm -rf didroom_microservices
+	@rm -f $(INSTALLER)
+	@rm -f $(NAME).mp4
+	@rm -f $(NAME).gif
 

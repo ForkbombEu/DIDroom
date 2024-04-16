@@ -64,8 +64,10 @@ Set FontSize 22
 Set Width 1200
 Set Height 600
 
-Type "echo '🎉 Welcome to didroom-microservices install'" Sleep 500ms  Enter
-Type "git clone --recursive https://github.com/forkbombeu/didroom_microservices" Sleep 500ms Enter
-Type "cd didroom_microservices" Sleep 500ms Enter
-Type "make up" Show Sleep 500ms Enter
-Sleep 240s
+Type "echo '🎉  Welcome to didroom-microservices install'" Sleep 2s  Enter
+Type "git clone --recursive https://github.com/forkbombeu/didroom_microservices" Sleep 3s Enter
+Sleep 10s
+Type "cd didroom_microservices" Sleep 2s Enter
+Type "echo '🚀 launch all the microservices with `make up`'" Sleep 5s  Enter
+Type "make up" Show Sleep 5s Enter
+Sleep 80s

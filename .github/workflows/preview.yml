@@ -42,12 +42,10 @@ jobs:
         working-directory: ./docs/installation_instructions
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/.vitepress/dist
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
           source-dir: docs/.vitepress/dist
+          preview-branch: main
+          umbrella-dir: docs/pr-preview
 

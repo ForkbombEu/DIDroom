@@ -17,6 +17,7 @@ This method is recommended for users who want a quick and hassle-free installati
 
 ![microservices_download](../images/microservices_download.png)
 
+
 2. **Extract and Configure**: Extract the zip file to your desired location and follow the provided instructions to configure the components according to your requirements.
 
 3. **Ready to Use**: Once configured, your DiDRoom Microservices are ready to use! Start managing decentralized identities and secure communication seamlessly.

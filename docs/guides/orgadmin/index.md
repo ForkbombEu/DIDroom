@@ -8,6 +8,7 @@ Welcome, System Administrator! This guide provides step-by-step instructions for
 
 ## Setup a credential issuer metadata
 
+
 <video controls="controls" src="https://github.com/ForkbombEu/signroom/raw/main/screenshots/videos/create_credential_issuer.webm" />
 
 ## Setup an authorization server metadata

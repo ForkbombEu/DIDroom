@@ -51,7 +51,10 @@ Welcome to DiDRoom Microservices installation guide! Below are two recommended w
 
 This method is recommended for users who want a quick and hassle-free installation experience. Follow these steps:
 
-1. **Download Zip File**: Visit [dashboard.didroom.com](https://dashboard.didroom.com) and download the zip file containing all the necessary components. This zip file comes pre-configured with all the flows for your credentials, including a working authorization server, credential issuer, and verification flow. Additionally, it includes a user-friendly UI and allows you to inject custom business rules.
+1. **Download Zip File**: from the issuance flow of the dashboard [dashboard.didroom.com](https://dashboard.didroom.com), click on "Download issuer" to download the zip file containing all the necessary components, see screnshot below:
+
+![microservices_download](../images/microservices_download.png)
+
 
 2. **Extract and Configure**: Extract the zip file to your desired location and follow the provided instructions to configure the components according to your requirements.
 

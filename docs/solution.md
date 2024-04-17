@@ -18,7 +18,7 @@ Our solution is divided into different repositories, each focusing on a specific
    ::: tip RESOURCES
    [GitHub](https://github.com/forkbombeu/signroom)
 
-   [Public beta](https://beta.signroom.io)
+   [Public beta](https://dashboard.didroom.com)
    :::
 
 ## DIDroom Mobile libs (Mobile Zencode)

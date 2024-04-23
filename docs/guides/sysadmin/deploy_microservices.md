@@ -53,7 +53,7 @@ This method is recommended for users who want a quick and hassle-free installati
 
 1. **Download Zip File**: from the issuance flow of the dashboard [dashboard.didroom.com](https://dashboard.didroom.com), click on "Download issuer" to download the zip file containing all the necessary components, see screnshot below:
 
-![microservices_download](../images/microservices_download.png)
+![microservices_download](/images/microservices_download.png)
 
 
 2. **Extract and Configure**: Extract the zip file to your desired location and follow the provided instructions to configure the components according to your requirements.

@@ -143,11 +143,11 @@ The core features of the Control Room are:
 
 ### Deployment from sourcecode
 
-Please follow the "On premise deployment" documentation on our site: [https://forkbombeu.github.io/DIDroom/on-premise.html](https://forkbombeu.github.io/DIDroom/on-premise.html):
+Please follow the "On premise deployment" documentation on our site: [https://forkbombeu.github.io/DIDroom/guides/sysadmin/](https://forkbombeu.github.io/DIDroom/guides/sysadmin/):
 
 
 
-[<img src="https://github.com/NGI-TRUSTCHAIN/DidRoom/assets/1547175/a2119dbe-1caa-4bf3-be5c-f2045433dbbd">](https://forkbombeu.github.io/DIDroom/on-premise.html) 
+[<img src="https://github.com/NGI-TRUSTCHAIN/DidRoom/assets/1547175/a2119dbe-1caa-4bf3-be5c-f2045433dbbd">](https://forkbombeu.github.io/DIDroom/guides/sysadmin/) 
 
 
 

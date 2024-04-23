@@ -1,10 +1,21 @@
-# On-Premise Deployment
+# Setup an instance
+
+#### for 🛠️ System Administrator
 
 For users who prefer full control over their infrastructure and data, Didroom supports on-premise deployment. Follow these steps to deploy Didroom on your own infrastructure:
 
 ::: tip
-If you are unfamiliar with servers, devops and unix commands look also at the [Software as a service](/quickstart) section that will allow you to define a credential issuance flow in minutes!
+If you are unfamiliar with servers, devops and unix commands look also at the [Software as a service](/quickstart) section that will allow you to define a credential issuance flow in minutes! Without installing anything on your servers.
 :::
+
+> [!IMPORTANT] Checklist
+> Before starting please make sure you have a
+
+1. Git installed on your server
+1. Docker compose installed on your server
+1. DID admin domain/context as specified on [`dyne/W3C-DID`](https://github.com/dyne/W3C-DID?tab=readme-ov-file#claim-your-own-domain-context-as-an-admin)
+<!-- 1. Caddy
+1. Firewall acess -->
 
 ### 1. clone the repo
 
@@ -25,7 +36,7 @@ cd signroom
 docker compose up --build
 ```
 
-this will run the backend of the dirdroom control room available on the network at 
+this will run the backend of the dirdroom control room available on the network at
 
 ```http
 http://localhost:8090/_

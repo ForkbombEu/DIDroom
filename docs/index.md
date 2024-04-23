@@ -10,11 +10,11 @@ hero:
     src: https://forkbomb.solutions/wp-content/uploads/2023/05/DIDroom_logo.svg
   actions:
     - theme: brand
-      text: 🎮 Quickstart
-      link: /quickstart
+      text: 🏁 Get started
+      link: /get_started.md
     - theme: brand
       text: JOIN NOW ↗
-      link: https://dashboard.didroom.com/register/
+      link: https://dashboard.didroom.com/
     - theme: alt 
       text: What is Didroom? ↗
       link: https://forkbomb.eu/solutions/didroom

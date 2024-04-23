@@ -1,4 +1,4 @@
-# Aknowledgements
+# 🫶🏻 Aknowledgements
 
 <img align="left" src="./images/logo-ngi-trustchain-positive-rgb-PNG.png" width="365">
 

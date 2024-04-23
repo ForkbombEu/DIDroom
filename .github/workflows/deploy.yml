@@ -50,7 +50,7 @@ jobs:
           sudo snap install ttyd --classic
           sudo apt update && sudo apt install vhs ffmpeg
       - run: make
-        working-directory: ./docs/installation_instructions
+        working-directory: ./docs/.installation_instructions
       - name: Build with VitePress
         run: npm run docs:build # or pnpm docs:build / yarn docs:build / bun run docs:build
       - name: Upload artifact

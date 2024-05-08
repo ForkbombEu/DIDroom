@@ -36,10 +36,10 @@ export default defineConfig({
       {
         text: "Guide",
         items: [
-          { text: "System admins", link: "/guides/sysadmin/" },
-          { text: "Organization admins", link: "/guides/orgadmin/" },
-          { text: "Wallet holders", link: "/guides/wallet/" },
-          { text: "Verifiers", link: "/guides/verifier/" },
+          { text: "Organization admins", link: "/guides/1_orgadmin/" },
+          { text: "Wallet App", link: "/guides/2_wallet/" },
+          { text: "Verifier App", link: "/guides/3_verifier/" },
+          { text: "System admins", link: "/guides/4_sysadmin/" }
         ],
       },
       { text: "Get started", link: "/get_started" },

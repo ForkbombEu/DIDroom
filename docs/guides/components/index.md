@@ -1,4 +1,4 @@
-# 📑 Concepts
+# 📑 Concepts/Components
 
 **Issuance flow**: TBW
 

@@ -1,4 +1,4 @@
-# Verifier App 
+# ✔️ Verifier App 
 
 The [Verifier App ](https://github.com/ForkbombEu/verifier) is an Android/iOS mobile app whose purpose is to start a **Verification Flow**. 
 

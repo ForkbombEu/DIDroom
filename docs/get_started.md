@@ -15,42 +15,39 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 > [!CAUTION] System administrators
 > For folks that wants to deploy and manage the infrastructure that powers Didroom.
 >
-> - [Setup an instance](/guides/sysadmin/setup)
-> - [Self host the dashboard](/guides/sysadmin/setup_dashboard)
-> - [Deploy microservices](/guides/sysadmin/deploy_microservices.md)
+> - [Setup an instance](/guides/4_sysadmin/setup)
+> - [Self host the dashboard](/guides/4_sysadmin/setup_dashboard)
+> - [Deploy microservices](/guides/4_sysadmin/deploy_microservices.md)
 
 > [!IMPORTANT] Organization administrators
 > For folks that wants to oversee the configuration and management of decentralized identity solutions within their organizations. Here you'll find instructions on how to use the Dashboard to configure settings, monitor your issuance flows, and access key functionalities.
 >
-> - [Setup a credential issuer](/guides/orgadmin/credential_issuer.md)
-> - [Setup an authorization server](/guides/orgadmin/auth_server.md)
-> - [Create issuance flows](/guides/orgadmin/issuance_flow.md)
+> - [Setup a credential issuer](/guides/1_orgadmin/credential_issuer.md)
+> - [Setup an authorization server](/guides/1_orgadmin/auth_server.md)
+> - [Create issuance flows](/guides/1_orgadmin/issuance_flow.md)
 > - [Create verification flows](/404)
 > - [Generate microservices from the dashboard](/404)
 > - [Add custom business logic for credential issuing](/404)
 > - [Add custom business logic for authorization](/404)
-> - [Create an organization](/guides/orgadmin/create.md)
+> - [Create an organization](/guides/1_orgadmin/create.md)
 
 > [!WARNING] Wallet holders
 >
 > For individuals that wants to use the Wallet Holder App to manage their decentralized identities and digital credentials securely. Here we walks you through the process of installing and using the Wallet Holder App to store, view, and share identity information with ease.
 >
-> - [Create an identity / keyring](/guides/wallet/register.md)
-> - [Request a credential](/guides/wallet/get_credential.md)
-> - [Present a credential](/guides/wallet/present_credential.md)
-> - [Get part to an organization](/guides/wallet/join_org.md)
-> - [Change language](/guides/wallet/change_language.md)
-> - [Define preferences](/guides/wallet/preferences.md)
-> - [Logout and wipe data](/guides/wallet/logout.md)
+> - [Create an identity / keyring](/guides/2_wallet/1_register.md)
+> - [Request a credential](/guides/2_wallet/3_get_credential.md)
+> - [Present a credential](/guides/2_wallet/4_present_credential.md)
+> - [Get part to an organization](/guides/2_wallet/2_join_org.md)
+> - [Define preferences](/guides/2_wallet/5_preferences.md)
 
 > [!TIP] Verifiers
 >
 > For individuals that wants to utilize the Verifier App to verify the authenticity and validity of decentralized identities and digital credentials. Here we outlines how to install and use the Verifier App to validate identity claims and ensure compliance with regulatory requirements.
 >
-> - [Register as a verifier](/guides/verifier/register.md)
-> - [Verify a credential](/guides/verifier/verify.md)
-> - [Select a verification flow](/guides/verifier/verification_flow.md)
-> - [Get part of an organization](/guides/verifier/join_org.md)
+> - [Get part of an organization](/guides/3_verifier/1_join_org.md)
+> - [Select a verification flow](/guides/3_verifier/2_verification_flow.md)
+> - [Verify a credential](/guides/3_verifier/3_verify.md)
 
 <style>
 :root {

@@ -1,4 +1,4 @@
-# Wallet App 
+# 🆔 Wallet App 
 
 The [Wallet App](https://github.com/ForkbombEu/wallet) is an Android/iOS mobile app whose purpose is to **request** and **present credentials**. 
 

@@ -143,7 +143,7 @@ The core features of the Control Room are:
 
 ### Deployment from sourcecode
 
-Please follow the "On premise deployment" documentation on our site: [https://forkbombeu.github.io/DIDroom/guides/sysadmin/](https://forkbombeu.github.io/DIDroom/guides/sysadmin/):
+Please follow the "On premise deployment" documentation on our site: [https://forkbombeu.github.io/DIDroom/guides/4_sysadmin/](https://forkbombeu.github.io/DIDroom/guides/4_sysadmin/) 
 
 
 

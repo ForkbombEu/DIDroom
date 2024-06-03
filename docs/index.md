@@ -4,10 +4,10 @@ layout: home
 
 hero:
   name: "Didroom ecosystem"
-  text: "Empower your Identity strategy\n— customize\n— plug\n— deploy"
-  tagline: Didroom is a customizable identity solution, EUDI-ARF compliant, and built with security (Zenroom) and decentrilazation (Dyne.org DID) in mind
+  text: "🔌Digital Identity into your solution:\n\n  • Web dashboard\n  • Microservices\n  • Android/iOS apps\n\n"
+  tagline: "DIDroom is a customizable identity solution, EUDI-ARF compliant, and built with security and decentralization in mind.\nRuns: ☁️SaaS, 🏭On-Premises, 🛠mixed\n\n"
   image:
-    src: https://forkbomb.solutions/wp-content/uploads/2023/05/DIDroom_logo.svg
+    src: ./images/DIDroom_logo_D_only.png
   actions:
     - theme: brand
       text: 🏁 Get started
@@ -17,7 +17,7 @@ hero:
       link: https://dashboard.didroom.com/register
     - theme: alt 
       text: What is Didroom? ↗
-      link: https://forkbomb.eu/solutions/didroom
+      link: https://forkbomb.solutions/solutions/didroom
 
 features:
   - title: Customizable identity solution
@@ -30,4 +30,3 @@ features:
     details: Dyne.org Decentralized Identifiers (DIDs) ensure decentralized and tamper-resistant identity management, enhancing privacy and control over personal data.
 
 ---
-

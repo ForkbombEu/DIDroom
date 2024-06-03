@@ -39,10 +39,12 @@ export default defineConfig({
           { text: "Organization admins", link: "/guides/1_orgadmin/" },
           { text: "Wallet App", link: "/guides/2_wallet/" },
           { text: "Verifier App", link: "/guides/3_verifier/" },
-          { text: "System admins", link: "/guides/4_sysadmin/" }
+          { text: "System admins", link: "/guides/4_sysadmin/" },
+		  { text: "Signatures", link: "/guides/5_signature/" }
         ],
       },
       { text: "Get started", link: "/get_started" },
+	  { text: "Pricing", link: "/guides/9_pricing/" },
     ],
     logo: "images/didroom_logo_emblem.svg",
     sidebar: generateSidebar(vitepressSidebarOptions),
@@ -55,7 +57,7 @@ export default defineConfig({
       message:
         'Released under the <a href="https://github.com/forkbombeu/didroom/blob/main/LICENSE">AGPLv3 License</a>.',
       copyright:
-        'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">The Forkbomb Company</a>',
+        'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">Forkbomb B.V.</a>',
     },
   },
 });

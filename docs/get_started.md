@@ -25,10 +25,10 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 > - [Setup a credential issuer](/guides/1_orgadmin/credential_issuer.md)
 > - [Setup an authorization server](/guides/1_orgadmin/auth_server.md)
 > - [Create issuance flows](/guides/1_orgadmin/issuance_flow.md)
-> - [Create verification flows](/404)
-> - [Generate microservices from the dashboard](/404)
-> - [Add custom business logic for credential issuing](/404)
-> - [Add custom business logic for authorization](/404)
+> - [Create verification flows](/guides/404)
+> - [Generate microservices from the dashboard](/guides/404)
+> - [Add custom business logic for credential issuing](/guides/404)
+> - [Add custom business logic for authorization](/guides/404)
 > - [Create an organization](/guides/1_orgadmin/create.md)
 
 > [!WARNING] Wallet holders

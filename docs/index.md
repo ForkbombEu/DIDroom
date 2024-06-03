@@ -14,7 +14,7 @@ hero:
       link: /get_started.md
     - theme: brand
       text: JOIN NOW ↗
-      link: https://dashboard.didroom.com/
+      link: https://dashboard.didroom.com/register
     - theme: alt 
       text: What is Didroom? ↗
       link: https://forkbomb.eu/solutions/didroom

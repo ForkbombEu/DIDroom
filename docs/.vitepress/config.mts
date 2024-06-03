@@ -23,7 +23,7 @@ const vitepressSidebarOptions = {
 };
 
 export default defineConfig({
-  base: "/DIDroom/",
+  base: "/",
   title: "Didroom ecosystem",
   description: "Empower your Identity strategy: customize, plug, deploy",
 

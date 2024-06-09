@@ -13,7 +13,6 @@ export default {
     })
   },
   enhanceApp: (ctx)  => {
-  
     matomo({
       router: ctx.router,
       siteID: 9, // Replace with your site id

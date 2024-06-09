@@ -9,5 +9,8 @@
     "vitepress": "^1.0.2",
     "vitepress-sidebar": "^1.22.0",
     "vue": "^3.4.21"
+  },
+  "dependencies": {
+    "@datagouv/vitepress-plugin-matomo": "^1.0.5"
   }
 }

@@ -1,7 +1,7 @@
 # Support
 
 We offer: 
-- **Comercial support**: write us at [support@forkbomb.eu](support@forkbomb.eu)
+- **Comercial support**: write us at [support@forkbomb.eu](mailto:support@forkbomb.eu)
 - **Community support**: please write an *Github issue* for the component you need support on, specifically
   - Control Room and Admin Dashboard: https://github.com/ForkbombEu/didroom/issues
   - Wallet: https://github.com/ForkbombEu/wallet/issues

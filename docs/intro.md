@@ -5,6 +5,11 @@ Whether you're looking to streamline identity verification processes, enhance da
 
 You can quickly test, plug and deploy by using our service at [dashboard.didroom.com](https://dashboard.didroom.com) or install the whole ecosystem on-premise on your infrastructure. For detailed instructions please refer to the [Get started guide](/get_started).
 
+## Watch our intro video
+
+<video controls="controls" src="./DIDroom-V3-setto.mp4" />
+
+
 ## How It Works
 
 Didroom offers a seamless and intuitive experience for managing decentralized identities and secure communication. Here's how it works:

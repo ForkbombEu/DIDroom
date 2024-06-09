@@ -8,9 +8,22 @@ We assume you're already familiar with Didroom's solution, its components and ho
 If it's not the case, please refer to the [introductory section](/intro.html) for an overview.
 :::
 
+## Watch our intro video
+
+<video controls="controls" src="./DIDroom-V3-setto.mp4" />
+
+
+
 Below, you'll find detailed descriptions of each guide, carefully curated to empower you with the knowledge and tools you need to navigate the world of decentralized identity management 🔐
 
+
+
+
 ---
+
+# Quick Intro
+
+
 
 > [!CAUTION] System administrators
 > For folks that wants to deploy and manage the infrastructure that powers Didroom.

@@ -12,11 +12,11 @@
 
 ## Provision and download the Microservices
 
-- Go to https://dashboard.didroom.com and create an issuance flow
-- From the issuance flow page, download the microservices.zip file by"Download microservices"
-- The issuance flow page should look like this:
+- Go to https://dashboard.didroom.com and create at leastt an Issuance Flow. During the creation, you will have to create multiple objects, such as templates and microservices setup. 
+- Then From the *Microservices* page, click on "Download microservices"
+- The Microservices page should look like this:
 
-![issuance_flow](https://github.com/ForkbombEu/DIDroom/assets/1547175/08725fe0-6d8f-4fae-a043-86400b0a9f83)
+![Microservices-manual-deployment](../images/microservices/microservices-manual-deployment.png)
 
 ## Deploy the Microservices
 

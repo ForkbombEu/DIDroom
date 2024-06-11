@@ -12,9 +12,9 @@ export default {
       // https://vitepress.dev/guide/extending-default-theme#layout-slots
     })
   },
-  enhanceApp: (ctx)  => {
+  enhanceApp: ({ app, router, siteData })  => {
     matomo({
-      router: ctx.router,
+      router: router,
       siteID: 9, // Replace with your site id
       trackerUrl: "https://matomo.dyne.org/" // Replace with your matomo url
     })

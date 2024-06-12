@@ -24,7 +24,7 @@ const vitepressSidebarOptions = {
 
 export default defineConfig({
   base: "/",
-  title: "Didroom ecosystem",
+  title: " | Open Source Digital Identity",
   description: "Empower your Identity strategy: customize, plug, deploy",
 
   lastUpdated: true,
@@ -46,7 +46,7 @@ export default defineConfig({
       { text: "Get started", link: "/get_started" },
 	  { text: "Pricing", link: "/guides/9_pricing/" },
     ],
-    logo: "images/didroom_logo_emblem.svg",
+    logo: "https://raw.githubusercontent.com/ForkbombEu/DIDroom/45a5ffb737d81c33449bf2d394627a88ddbfc1d0/images/DIDroom_logo.svg",
     sidebar: generateSidebar(vitepressSidebarOptions),
     socialLinks: [
       { icon: "github", link: "https://github.com/forkbombeu/didroom" },

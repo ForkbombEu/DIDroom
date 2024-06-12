@@ -30,6 +30,14 @@ export default defineConfig({
   lastUpdated: true,
   metaChunk: true,
 
+  head: [
+    [
+      'script',
+      {},
+      `window.$crisp=[];window.CRISP_WEBSITE_ID="8dd97823-ddac-401e-991a-7498234e4f00";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
+    ]
+  ],
+
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },

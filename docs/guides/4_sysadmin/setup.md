@@ -47,7 +47,7 @@ The two web applications run on two different ports and have different user acco
 
 
 
-### 3. Log in onto the DIDroom Control Room 
+### 3. Create an account and log in onto the DIDroom Control Room 
 
 Go to:
 
@@ -55,13 +55,7 @@ Go to:
 http://localhost:4173/
 ```
 
-Register a new uer or log in using the default user:
-
-
-**user**: `userA@example.org`
-
-**pass**: `userAuserA`
-
+Register a new uer and log in. From this point, you should be able to create an organization, and from there you can create issuance and verification flows, etc.
 
 
 

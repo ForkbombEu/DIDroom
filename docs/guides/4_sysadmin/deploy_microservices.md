@@ -20,13 +20,20 @@
 
 ## Deploy the Microservices
 
-- Copy the microservices.zip file on the server and unzip it, it should create the folder /DIDroom_microservices (which maybe will be inside /microservices...(
+1. Copy the microservices.zip file on the server and unzip it, it should create the folder /DIDroom_microservices (which maybe will be inside /microservices...(
 
-- type: _cd DIDroom_microservices_
+1. type: _cd DIDroom_microservices_
 
-- type: _make up_ (this command generates the secret keys for the microservices, and registers a DID for each of them)
+1. copy *.env.example*, once for each microservice to *auth.env*, *iss.env* and *rp.env* and configure:
+   - UP_PORT with the local port on which the microservice will be started
+   - MS_NAME with the relative path, where the microservice is deployed (e.g. /my_credential_issuer)
+   - MS_URL with the root endpoint of the microservice (for example:  https://my.microservices.com/my_credential_issuer)
 
-From that moment, you should have the microservices (authz_server and credential_issuer) running and configured.
+1. type: _make up_ (this command generates the secret keys for the microservices, and registers a DID for each of them)
+
+From that moment, you should have the microservices (authz_server, credential_issuer and relying_party) configured and running.
+
+**Note**: configuration of the .env is soon to be automatically written by the Dashboard (this is a temp workaround)
 
 ## Receive your first credential
 

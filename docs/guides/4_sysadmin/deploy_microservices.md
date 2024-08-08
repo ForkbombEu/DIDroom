@@ -16,7 +16,7 @@
    - _authz.myapp.com_
    - _rp.myapp.com_
 
-1. Setup a linux server, configure SSL and make sure the server is resolved at: https://myapp.com/ or ideally to the 3 subdomains as above. You'll need to setup a reverse proxy (more about it later).
+1. Setup a linux server, configure TLS and make sure the server is resolved at: https://myapp.com/ or ideally to the 3 subdomains as above. You'll need to setup a reverse proxy (more about it later).
 
 1. Make sure you have all the commands installed, type: 
 
@@ -50,7 +50,7 @@ From that moment, you should have the microservices (authz_server, credential_is
 
 ## Reverse proxy 
 
-The OpenID4VCI and OpenID4VP protocols dictate the use of SSL, so you'll need to be able to access each microservice via _https://_ 
+The OpenID4VCI and OpenID4VP protocols dictate the use of TLS, so you'll need to be able to access each microservice via _https://_ 
 
 There are multiple ways to do this, using e.g. Nginx. We recommend using [Caddy](https://caddyserver.com/) at least in test environments as it's easy and fast to configure. 
 
@@ -108,7 +108,8 @@ myapp.com {
 }
 ```
 
-
+> [!IMPORTANT] Note:
+> Using a single domain for all the microservices, with this configuration, won't allow you to use the [Swagger](https://swagger.io/) to test the microservices. The Swagger is available at the _/docs_ route, configuring it's access is possible but more complicated. 
 
 
 <!--

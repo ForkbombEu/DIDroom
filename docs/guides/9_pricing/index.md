@@ -4,19 +4,19 @@
 
 Our pricing table. For a quick description of the different items, see below. 
 
-|                         							| **Free**        | **Pro**       |        **Enterprise** |  
+|                         										| **Free**        | **Pro**       |        **Enterprise** |  
 |--|--|--|--|
-|<span style="color:blue">Organizations</span>    	|  		 1          |      1       	| Unlimited             |
-|<span style="color:blue">Issuance flows</span>		|  		 1          |      5       	| Unlimited             |
-|<span style="color:blue">Verification flows</span>	|  		 1          |      5       	| Unlimited             |
-|<span style="color:blue">Public credentials</span>	|  		No          |      No      	|  	Yes                 |
-|Microservices Deployment 							|  Manual         | Manual, Auto  | Manual, Auto, CI      |
-|Control Room             							|  SaaS           | SaaS          | SaaS, on premises     |
-|<span style="color:red">Admin Dashboard</span> 	|  No             | No            | On premises           |
-|<span style="color:red">Credential customization Support</span> |    No   |     Github  	| Training, Support, Customization |
-|<span style="color:red">White labeling</span>		|  No	            |     No        | Yes  	                    |
-|<span style="color:red">W3C-DID service</span> 		|  SaaS	          |     SaaS      | SaaS, on premises     |
-|**Price**                							| **Free!**       | **99 €/month**|  [Call Sales](mailto:sales@forkbomb.eu)   |
+|<span style="color:blue">Organizations</span>    				|  		 1          |      1       	| Unlimited             |
+|<span style="color:blue">Issuance flows</span>					|  		 1          |      5       	| Unlimited             |
+|<span style="color:blue">Verification flows</span>				|  		 1          |      5       	| Unlimited             |
+|<span style="color:blue">Public credentials</span>				|  		No          |      No      	|  	Yes                 |
+|Microservices Deployment 										|  Manual         	| Manual, Auto  | Manual, Auto, CI      |
+|Control Room             										|  SaaS           	| SaaS          | SaaS, on premises     |
+|<span style="color:red">Admin Dashboard</span> 				|  No             	| No            | On premises           |
+|<span style="color:red">Credential customization Support</span> |    No   			|     Github  	| Training, Support, Customization |
+|<span style="color:red">White labeling</span>					|  No	            |     No        | Yes  	                    |
+|<span style="color:red">W3C-DID service</span> 				|  SaaS	          	|     SaaS      | SaaS, on premises, customizable     |
+|**Price**                										| **Free!**       	| **99 €/month**|  [Call Sales](mailto:sales@forkbomb.eu)   |
 
 
 

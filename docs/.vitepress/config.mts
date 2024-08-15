@@ -24,7 +24,7 @@ const vitepressSidebarOptions = {
 
 export default defineConfig({
   base: "/",
-  title: " | Open Source Digital Identity",
+  title: " ",
   description: "Empower your Identity strategy: customize, plug, deploy",
 
   lastUpdated: true,

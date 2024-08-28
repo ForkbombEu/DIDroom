@@ -1,4 +1,4 @@
-# Keypairoom: (re)generate your secret keys
+# Keypairoom: (re)generate your Secret Keys 
 
 Keypairoom is component to **generate and regenerate a keyring**, containing multiple secret keys (along with the correspondet public keys) in a **deterministic and private way**. 
 

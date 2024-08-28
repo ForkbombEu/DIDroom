@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import umlPlugin from 'markdown-it-plantuml';
 
 const vitepressSidebarOptions = {
   documentRootPath: "docs",
@@ -68,4 +69,9 @@ export default defineConfig({
         'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">Forkbomb B.V.</a>',
     },
   },
+    markdown: {
+		config(md) {
+			md.use(umlPlugin)
+    }
+  }
 });

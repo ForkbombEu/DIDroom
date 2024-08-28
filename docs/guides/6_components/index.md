@@ -2,7 +2,7 @@
 
 **Issuance flow**: TBW
 
-**Verification flow**: TBW
+**[Verification flow](./verification.md)**
 
 **Templates**: TBW
 

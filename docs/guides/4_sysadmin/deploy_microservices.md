@@ -48,11 +48,16 @@ The _make up_ command generates the secret keys for the microservices, and regis
 
 From that moment, you should have the microservices (authz_server, credential_issuer and relying_party) configured and running, on the port you have configured in the dashboard.
 
-## Reverse proxy 
+# Reverse proxy (with Caddy)
 
 The OpenID4VCI and OpenID4VP protocols dictate the use of TLS, so you'll need to be able to access each microservice via _https://_ 
 
 There are multiple ways to do this, using e.g. Nginx. We recommend using [Caddy](https://caddyserver.com/) at least in test environments as it's easy and fast to configure. 
+
+> [!IMPORTANT] Important:
+> While you configure and test Caddy, the microservices must all be running already, at the correct ports, because Caddy will try to bind the ports when it's started (or reloaded). So **make sure you have the microservices running** before you go into this section.
+
+
 
 #### Install Caddy
 To install _Caddy_ check the [documentation](https://caddyserver.com/docs/install) or try your luck with: 
@@ -76,7 +81,7 @@ sudo nano /etc/caddy/Caddyfile
 
 If you have 3 subdomains, assuming that the microservices are running on the ports 3001, 3002 and 3003, add to *Caddyfile*:
 
-```json
+```caddy
 
 issuer.myapp.com {
         reverse_proxy http://localhost:3001
@@ -91,21 +96,15 @@ rp.myapp.com {
 
 ### Setup Caddy with 1 domain
 
-If you only have configured 1 domain, for example _myapp.com_ add to *Caddyfile*
+If you only have configured 1 domain, for example _myapp.com_ then add to *Caddyfile*
 
-```json
-myapp.com {
-        route /credential_issuer*
-		reverse_proxy http://localhost:3001
-}
-myapp.com {
-		route /authz_server*
-        reverse_proxy http://localhost:3002
-}
-myapp.com {
-		route /relying_party*
-        reverse_proxy http://localhost:3003
-}
+```caddy
+myapp.com
+ {
+	reverse_proxy /credential_issuer/* :3001
+	reverse_proxy /authz_server/* :3002
+	reverse_proxy /relying_party/* :3003
+} 
 ```
 
 > [!IMPORTANT] Note:

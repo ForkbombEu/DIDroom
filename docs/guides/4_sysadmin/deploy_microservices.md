@@ -99,8 +99,7 @@ rp.myapp.com {
 If you only have configured 1 domain, for example _myapp.com_ then add to *Caddyfile*
 
 ```caddy
-myapp.com
- {
+myapp.com {
 	reverse_proxy /credential_issuer/* :3001
 	reverse_proxy /authz_server/* :3002
 	reverse_proxy /relying_party/* :3003

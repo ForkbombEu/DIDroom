@@ -1,148 +1,290 @@
-# Privacy Policy
+# Privacy Policies
 
-Please read below the privacy policies for each of the components of DIDroom where personal data is entered.
+Please read below the privacy policies the DIDroom Wallet, DIDroom Wallet, and the DIDroom Control Room (Dashboard).
 
 
 ## 📱DIDroom Wallet 📱
 
-**Terms & Conditions**  
+**Last Updated:** [30.08.2024]
 
-These terms and conditions applies to the DIDroom Wallet app (hereby referred to as "Application") for mobile devices that was created by Forkbomb B.V. (hereby referred to as "Service Provider") as a Freemium service.
+## 1. Introduction
 
-Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.
+This Privacy Policy explains how Forkbomb B.V. ("we", "our", "us") collects, uses, and protects your personal data when you use the DIDroom Wallet mobile app ("the Wallet"). By using the Wallet, you agree to the collection and use of information in accordance with this policy.
 
-The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.
+## 2. Data Collection
 
-The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone's security features, and may result in the Application not functioning correctly or at all.
+### Personal Data
+The DIDroom Wallet app collects the following types of personal data:
+- **Names**
+- **Credential Data**
+- **Organization Information**: The organization the user is part of on the DIDroom Control Room (Dashboard).
 
-Please note that the Application utilizes third-party services that have their own Terms and Conditions. Below are the links to the Terms and Conditions of the third-party service providers used by the Application:
+### Device Information
+The Wallet app does not collect any device-related information, such as device IDs or location data.
 
-*   [Google Play Services](https://policies.google.com/terms)
+### Collection Methods
+Data is collected through:
+- **User Input**: Information provided directly by the user.
+- **Device Sensors**: Information gathered through device sensors.
+- **Interaction**: Interaction with DIDroom Control Room (Dashboard) and DIDroom microservices, operated by Forkbomb B.V. or third parties.
 
-Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Application require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance.
+## 3. Data Processing
 
-If you are using the application outside of a Wi-Fi area, please be aware that your mobile network provider's agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the application, you accept responsibility for any such charges, including roaming data charges if you use the application outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer.
+### Purposes of Data Processing
+The collected data is used for the following purposes:
+- **Credential Request**
+- **Credential Storage**
+- **Credential Presentation**
+- **Authentication**
+- **Personalization**
 
-Similarly, the Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.
+### Processing Locations
+The data is processed locally on the device. However, the credential signature is verified by an external microservice called Relying Party, which may be operated by third parties or Forkbomb B.V.
 
-In terms of the Service Provider's responsibility for your use of the application, it is important to note that while they strive to ensure that it is updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application.
+## 4. Data Storage and Security
 
-The Service Provider may wish to update the application at some point. The application is currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the application to) may change, and you will need to download the updates if you want to continue using the application. The Service Provider does not guarantee that it will always update the application so that it is relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the application when offered to you. The Service Provider may also wish to cease providing the application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device.
+### Data Storage
+- **Secret Keys and Credentials**: Stored locally on the device.
+- **Email and Organization Data**: Stored on the DIDroom Control Room (Dashboard), which is hosted in the Cloud based in Europe.
 
-**Changes to These Terms and Conditions**
+### Security Measures
+We implement the following security measures to protect your data:
+- **End-to-End Encryption**
+- **TLS (Transport Layer Security) Communication**
+- **Asymmetric Signatures**
 
-The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.
+## 5. User Rights
 
-These terms and conditions are effective as of 2024-08-30
+### User Rights
+Users have the following rights regarding their data:
+- **Access**: The right to access the data we hold about you.
+- **Correction**: The right to correct any inaccuracies in your data.
+- **Deletion**: The right to request the deletion of your data.
 
-**Contact Us**
+### Exercising Rights
+You can exercise these rights through:
+- **In-App Options**
+- **Contacting Support**
 
-If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at info@forkbomb.eu.
+## 6. International Data Transfers
 
-* * *
+### Data Transfers
+The DIDroom Wallet app does not directly involve international data transfers. Any such transfers are handled within the application.
 
-This Terms and Conditions page was generated by [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
+## 7. Cookies and Tracking
+
+### Cookies and Tracking
+The DIDroom Wallet app uses cookies and tracking technologies for analytics. When presenting a credential the Wallet sends data the Relying Party. The Relying Party transfers some data to the DIDroom Verifier via Firebase, if the DIDroom Verifier is used as a mobile app. Firebase is not used if the DIDroom Verifier is deployed as a web app. 
+
+## 8. Updates to the Privacy Policy
+
+### Notification of Changes
+Users will be notified of any changes to this Privacy Policy via email.
+
+## 9. Contact Information
+
+For any questions or concerns about this Privacy Policy, please contact us at:
+
+**Forkbomb B.V.**  
+Haparandadam 7-A1  
+1013AK Amsterdam  
+Netherlands  
+Email: info@forkbomb.eu
+
+## 10. Compliance and Legal
+
+### Industry Standards
+The DIDroom Wallet adheres to GDPR and California privacy laws.
+
+------------
 
 ## 📲 DIDroom Verifier 📲
 
-**Terms & Conditions**  
+**Last Updated:** [30.08.2024]
 
-These terms and conditions applies to the DIDroom Verifier app (hereby referred to as "Application") for mobile devices that was created by Forkbomb B.V. (hereby referred to as "Service Provider") as a Freemium service.
+## 1. Introduction
 
-Upon downloading or utilizing the Application, you are automatically agreeing to the following terms. It is strongly advised that you thoroughly read and understand these terms prior to using the Application. Unauthorized copying, modification of the Application, any part of the Application, or our trademarks is strictly prohibited. Any attempts to extract the source code of the Application, translate the Application into other languages, or create derivative versions are not permitted. All trademarks, copyrights, database rights, and other intellectual property rights related to the Application remain the property of the Service Provider.
+This Privacy Policy explains how Forkbomb B.V. ("we", "our", "us") collects, uses, and protects your personal data when you use the DIDroom Verifier mobile app ("the Verifier"). By using the Verifier, you agree to the collection and use of information in accordance with this policy.
 
-The Service Provider is dedicated to ensuring that the Application is as beneficial and efficient as possible. As such, they reserve the right to modify the Application or charge for their services at any time and for any reason. The Service Provider assures you that any charges for the Application or its services will be clearly communicated to you.
+## 2. Data Collection
 
-The Application stores and processes personal data that you have provided to the Service Provider in order to provide the Service. It is your responsibility to maintain the security of your phone and access to the Application. The Service Provider strongly advise against jailbreaking or rooting your phone, which involves removing software restrictions and limitations imposed by the official operating system of your device. Such actions could expose your phone to malware, viruses, malicious programs, compromise your phone's security features, and may result in the Application not functioning correctly or at all.
+### Personal Data
+The DIDroom Verifier app receives the following personal data during the credential verification process:
+- **Claims**: Information disclosed from a credential held in the DIDroom Wallet. The Holder of the DIDroom Wallet consents to disclose these claims. The Verifier does not store these claims; only a log of the verification process is maintained.
 
-Please note that the Application utilizes third-party services that have their own Terms and Conditions. Below are the links to the Terms and Conditions of the third-party service providers used by the Application:
+### Collection Methods
+Data is collected through:
+- **QR Code Scans**
+- **Direct Data Transfer**: If the Verifier is deployed as a web application.
 
-*   [Google Play Services](https://policies.google.com/terms)
+### Device Information
+The Verifier app does not collect any device-related information, such as device IDs or location data.
 
-Please be aware that the Service Provider does not assume responsibility for certain aspects. Some functions of the Application require an active internet connection, which can be Wi-Fi or provided by your mobile network provider. The Service Provider cannot be held responsible if the Application does not function at full capacity due to lack of access to Wi-Fi or if you have exhausted your data allowance.
+## 3. Data Processing
 
-If you are using the application outside of a Wi-Fi area, please be aware that your mobile network provider's agreement terms still apply. Consequently, you may incur charges from your mobile provider for data usage during the connection to the application, or other third-party charges. By using the application, you accept responsibility for any such charges, including roaming data charges if you use the application outside of your home territory (i.e., region or country) without disabling data roaming. If you are not the bill payer for the device on which you are using the application, they assume that you have obtained permission from the bill payer.
+### Purposes of Data Processing
+The received personal data is used solely for:
+- **Verification of Credentials**
 
-Similarly, the Service Provider cannot always assume responsibility for your usage of the application. For instance, it is your responsibility to ensure that your device remains charged. If your device runs out of battery and you are unable to access the Service, the Service Provider cannot be held responsible.
+### Processing Locations
+Data is processed locally on the device. However, credential signatures are verified by an external microservice called Relying Party, which may be operated by third parties or by Forkbomb B.V. 
 
-In terms of the Service Provider's responsibility for your use of the application, it is important to note that while they strive to ensure that it is updated and accurate at all times, they do rely on third parties to provide information to them so that they can make it available to you. The Service Provider accepts no liability for any loss, direct or indirect, that you experience as a result of relying entirely on this functionality of the application.
+## 4. Data Storage and Security
 
-The Service Provider may wish to update the application at some point. The application is currently available as per the requirements for the operating system (and for any additional systems they decide to extend the availability of the application to) may change, and you will need to download the updates if you want to continue using the application. The Service Provider does not guarantee that it will always update the application so that it is relevant to you and/or compatible with the particular operating system version installed on your device. However, you agree to always accept updates to the application when offered to you. The Service Provider may also wish to cease providing the application and may terminate its use at any time without providing termination notice to you. Unless they inform you otherwise, upon any termination, (a) the rights and licenses granted to you in these terms will end; (b) you must cease using the application, and (if necessary) delete it from your device.
+### Data Storage
+- **Personal Data**: No personal data is stored by the Verifier.
+- **Operator Data**: Personal data of the person operating the Verifier is stored by the DIDroom Control Room (Dashboard).
 
-**Changes to These Terms and Conditions**
+### Security Measures
+We implement the following security measures to protect data:
+- **TLS (Transport Layer Security)**
+- **Cryptographic Asymmetric Signatures**
 
-The Service Provider may periodically update their Terms and Conditions. Therefore, you are advised to review this page regularly for any changes. The Service Provider will notify you of any changes by posting the new Terms and Conditions on this page.
+## 5. User Rights
 
-These terms and conditions are effective as of 2024-08-30
+### User Rights
+Users have the following rights regarding their data:
+- **Access**: The right to access the data we hold about you.
+- **Correction**: The right to correct any inaccuracies in your data.
+- **Deletion**: The right to request the deletion of your data.
 
-**Contact Us**
+### Exercising Rights
+These rights can be exercised through:
+- **DIDroom Control Room (Dashboard)**
+- **Contacting Support**
 
-If you have any questions or suggestions about the Terms and Conditions, please do not hesitate to contact the Service Provider at info@forkbomb.eu.
+## 6. International Data Transfers
 
-* * *
+### Data Transfers
+The DIDroom Verifier app may involve international data transfers, which are handled directly within the app.
 
-This Terms and Conditions page was generated by [App Privacy Policy Generator](https://app-privacy-policy-generator.nisrulz.com/)
+## 7. Cookies and Tracking
 
+### Cookies and Tracking
+The DIDroom Verifier app itself does not use cookies or tracking technologies. However, it connects to Firebase for messages, which may include data sent by the Relying Party and originally by the DIDroom Wallet. 
+
+## 8. Updates to the Privacy Policy
+
+### Notification of Changes
+Users will be notified of any changes to this Privacy Policy via email.
+
+## 9. Contact Information
+
+For any questions or concerns about this Privacy Policy, please contact us at:
+
+**Forkbomb B.V.**  
+Haparandadam 7-A1  
+1013AK Amsterdam  
+Netherlands  
+Email: info@forkbomb.eu
+
+### Industry Standards
+The DIDroom Wallet adheres to GDPR and California privacy laws.
+
+------------
 
 ## 💻 DIDroom Control Room (Dashboard) 💻
 
-Privacy Policy for DIDroom Dashboard
-Last Updated: [Date]
+**Last Updated:** [30.08.2024]
 
-1. Introduction
-Welcome to DIDroom Dashboard. This Privacy Policy outlines how we collect, use, store, and protect your personal data when you use our web application. We are committed to ensuring that your privacy is protected and that we comply with applicable data protection regulations, including the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA/CPRA).
+## 1. Introduction
 
-DIDroom Dashboard is developed and operated by Forkbomb B.V., located at Haparandadam 7-A1, 1013AK Amsterdam, Netherlands.
+This Privacy Policy explains how Forkbomb B.V. ("we", "our", "us") collects, uses, and protects your personal data when you use the DIDroom Control Room (Dashboard) ("the Dashboard"). By using the Dashboard, you agree to the collection and use of information in accordance with this policy.
 
-2. Data Collection
-We collect the following types of personal data:
+## 2. Data Collection
 
-Email Addresses: Collected when you create an account or invite others to use the platform.
-IP Addresses: Collected to ensure security and monitor usage.
-Billing Information: Collected to process payments for any paid services.
-This data is collected directly from you when you enter it into the platform.
+### Personal Data
+The DIDroom Control Room (Dashboard) collects the following types of personal data:
+- **Email Addresses**
+- **IP Addresses**
+- **Billing Information**
 
-3. Data Processing
-The personal data we collect is used for the following purposes:
+### Data Collection Methods
+Data is collected through:
+- **User Input**: Information provided directly by the user.
+- **Invitations**: Users may invite others via email to join the Dashboard.
 
-Account Creation: To establish and manage your user account.
-Personalization: To tailor the experience within DIDroom Dashboard to your needs.
-We do not use your data for automated decision-making or profiling, and we do not share your data with third parties.
+### Third-Party Data Collection
+The DIDroom Control Room (Dashboard) does not collect data from third parties.
 
-4. Data Storage and Security
-Your data is stored on secure cloud services located in Europe. We implement the following security measures to protect your data:
+## 3. Data Processing
 
-Encryption: All data is encrypted both in transit and at rest.
-Access Controls: Strict access controls are in place to ensure that only authorized personnel can access your data.
-Your data is retained until you choose to delete your account. Once deleted, all your personal data will be permanently removed from our systems.
+### Purposes of Data Processing
+The collected data is used for the following purposes:
+- **Account Creation**
+- **Personalization**
 
-5. User Rights
-Under applicable privacy laws, you have the following rights regarding your personal data:
+### Automated Decision-Making
+The DIDroom Control Room (Dashboard) does not use data for automated decision-making or profiling.
 
-Access: You can request access to your personal data at any time.
-Rectification: You can request corrections to any inaccurate or incomplete data.
-Deletion: You can request the deletion of your personal data.
-You can exercise these rights directly through the DIDroom Dashboard or by contacting our support team at info@forkbomb.eu. Please note that we are planning to implement Know Your Customer (KYC) procedures to verify the identity of users who request to exercise these rights.
+### Data Sharing
+No data is shared with third parties.
 
-6. Cookies and Tracking
-We use cookies and tracking technologies to enhance your experience on DIDroom Dashboard. Specifically, we use Matomo, an on-premises analytics tool, to gather insights into how our platform is used.
+## 4. Data Storage and Security
 
-You have the ability to manage or opt out of cookies through the "no-follow" option in your browser settings. Please be aware that disabling cookies may affect your experience on the platform.
+### Data Storage Locations
+Data is stored in cloud services based in Europe.
 
-7. International Data Transfers
-All data is processed and stored within Europe. We do not transfer your personal data internationally.
+### Data Retention
+Data is retained until the user deletes their account.
 
-8. Minors
-DIDroom Dashboard is a complex digital identity solution and is not intended for use by children. We do not knowingly collect personal data from minors and do not obtain parental consent for data collection.
+### Security Measures
+We implement the following security measures to protect your data:
+- **Encryption**
+- **Access Controls**
 
-9. Updates to the Privacy Policy
-We may update this Privacy Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. You will be notified of any significant changes via email.
+## 5. User Rights
 
-10. Contact Information
-If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact us at:
+### User Rights
+Users have the following rights regarding their data:
+- **Access**: The right to access the data we hold about you.
+- **Rectification**: The right to correct any inaccuracies in your data.
+- **Deletion**: The right to request the deletion of your data.
 
-Company Name: Forkbomb B.V.
-Address: Haparandadam 7-A1, 1013AK Amsterdam, Netherlands
+### Exercising Your Rights
+You can exercise these rights through the Dashboard or by contacting our support team.
+
+### Identity Verification
+Currently, there is no identity verification process, but we plan to implement KYC (Know Your Customer) in the future.
+
+## 6. Cookies and Tracking
+
+### Cookies and Analytics
+The DIDroom Control Room (Dashboard) uses cookies and tracking technologies for analytics. We use Matomo, which is deployed on an on-premises server.
+
+### Managing Cookies
+Users can manage or opt out of cookies through the "no-follow" option in their browser settings.
+
+## 7. International Data Transfers
+
+### Data Transfers
+No user data is transferred internationally.
+
+## 8. Minors
+
+### Age Restrictions
+The DIDroom Control Room (Dashboard) is not intended for use by children due to its complexity.
+
+### Parental Consent
+We do not obtain parental consent for minors' data collection.
+
+## 9. Updates to the Privacy Policy
+
+### Notification of Changes
+Users will be notified of any changes to this Privacy Policy via email.
+
+## 10. Contact Information
+
+For any questions or concerns about this Privacy Policy, please contact us at:
+
+**Forkbomb B.V.**  
+Haparandadam 7-A1  
+1013AK Amsterdam  
+Netherlands  
 Email: info@forkbomb.eu
-11. Compliance and Legal
-DIDroom Dashboard adheres to applicable data protection laws but does not currently hold specific industry certifications related to data privacy. We continuously monitor our compliance with GDPR, CCPA/CPRA, and other relevant regulations.
+
+## 11. Compliance and Legal
+
+### Industry Standards
+The DIDroom Control Room (Dashboard) adheres to GDPR and California privacy laws.
+

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting...</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const iosUrl = "https://apps.apple.com/app/6670396049";
+        const androidUrl =
+          "https://play.google.com/store/apps/details?id=com.didroom.wallet";
+        const userAgent =
+          navigator.userAgent || navigator.vendor || window.opera;
+
+        if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+          window.location.href = iosUrl;
+        } else if (/android/i.test(userAgent)) {
+          window.location.href = androidUrl;
+        } else {
+          document.body.innerHTML =
+            "<h1>Unsupported platform. Please access this page from an iOS or Android device.</h1>";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>

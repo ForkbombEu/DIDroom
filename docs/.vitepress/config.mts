@@ -1,9 +1,14 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
-import umlPlugin from 'markdown-it-plantuml';
+import umlPlugin from "markdown-it-plantuml";
 
 const vitepressSidebarOptions = {
-  documentRootPath: "docs",
+  documentRootPath: "/docs",
+  useTitleFromFrontmatter: true,
+  sortMenusByFrontmatterOrder: true,
+  frontmatterOrderDefaultValue: 999,
+  includeFolderIndexFile: true,
+  useFolderLinkFromIndexFile: true,
   manualSortFileNameByPriority: [
     "intro.md",
     "core-technologies.md",
@@ -16,10 +21,6 @@ const vitepressSidebarOptions = {
     "deploy_microservices.md",
     "orgadmin",
   ],
-  useTitleFromFileHeading: true,
-  useFolderTitleFromIndexFile: true,
-  useFolderLinkFromIndexFile: true,
-  collapsed: false,
   includeDotFiles: false,
 };
 
@@ -33,10 +34,10 @@ export default defineConfig({
 
   head: [
     [
-      'script',
+      "script",
       {},
-      `window.$crisp=[];window.CRISP_WEBSITE_ID="8dd97823-ddac-401e-991a-7498234e4f00";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`
-    ]
+      `window.$crisp=[];window.CRISP_WEBSITE_ID="8dd97823-ddac-401e-991a-7498234e4f00";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
+    ],
   ],
 
   themeConfig: {
@@ -49,11 +50,11 @@ export default defineConfig({
           { text: "Wallet App", link: "/guides/2_wallet/" },
           { text: "Verifier App", link: "/guides/3_verifier/" },
           { text: "System admins", link: "/guides/4_sysadmin/" },
-		  { text: "Signatures", link: "/guides/5_signature/" }
+          { text: "Signatures", link: "/guides/5_signature/" },
         ],
       },
       { text: "Get started", link: "/get_started" },
-	  { text: "Pricing", link: "/guides/9_pricing/" },
+      { text: "Pricing", link: "/guides/9_pricing/" },
     ],
     logo: "https://raw.githubusercontent.com/ForkbombEu/DIDroom/45a5ffb737d81c33449bf2d394627a88ddbfc1d0/images/DIDroom_logo.svg",
     sidebar: generateSidebar(vitepressSidebarOptions),
@@ -69,9 +70,9 @@ export default defineConfig({
         'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">Forkbomb B.V.</a>',
     },
   },
-    markdown: {
-		config(md) {
-			md.use(umlPlugin)
-    }
-  }
+  markdown: {
+    config(md) {
+      md.use(umlPlugin);
+    },
+  },
 });

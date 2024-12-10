@@ -1,5 +1,5 @@
 ---
-title: 🧩 Technology and Components
+title: 🧩 Technology
 order: 60
 ---
 

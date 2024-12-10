@@ -6,16 +6,19 @@ order: 10
 
 # Delete account
 
-**Last Updated:** [20.09.2024]
+**Last Updated:** [10.12.2024]
 
-
-Please read below the privacy policies the DIDroom Wallet, DIDroom Wallet, and the DIDroom Dashboard (Dashboard).
-
+Before you proceed, please read the privacy policies of the DIDroom Wallet, Verifier, and Dashboard.
 
 ## Step 1
 
+Write us at [remove-didroom-account@forkbomb.eu](mailto:remove-didroom-account@forkbomb.eu)
+
 ## Step 2
+
+(Coming soon)
 
 ## Step 3 
 
+(Coming also soon)
 

@@ -21,8 +21,9 @@ const vitepressSidebarOptions = {
 
 export default defineConfig({
   base: "/",
-  title: " ",
+  title: " | DIDroom Identity Solution ",
   description: "Empower your Identity strategy: customize, plug, deploy",
+  lang: 'en-US',
 
   lastUpdated: true,
   metaChunk: true,
@@ -33,6 +34,7 @@ export default defineConfig({
       {},
       `window.$crisp=[];window.CRISP_WEBSITE_ID="8dd97823-ddac-401e-991a-7498234e4f00";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
     ],
+	 ['link', { rel: 'icon', type: 'image/x-icon', href: './public/favicon/favicon.ico' }],
   ],
 
   themeConfig: {
@@ -41,21 +43,22 @@ export default defineConfig({
       {
         text: "Guide",
         items: [
-          { text: "Organization admins", link: "/guides/Orgadmin/" },
-          { text: "Wallet App", link: "/guides/Wallet/" },
-          { text: "Verifier App", link: "/guides/Verifier/" },
-          { text: "System admins", link: "/guides/Sysadmin/" },
-          { text: "Signatures", link: "/guides/Signature/" },
+          { text: "Organization admins", link: "/guides/Orgadmin/intro" },
+          { text: "Wallet App", link: "/guides/Wallet/wallet" },
+          { text: "Verifier App", link: "/guides/Verifier/verifier" },
+		  { text: "Credential issuance", link: "guides/Orgadmin/issuance_flow" },	  
+          { text: "Signatures", link: "/guides/Signature/signatures" },
+		  { text: "Sysadmins", link: "/guides/Sysadmin/sysadmin" },
         ],
       },
       { text: "Get started", link: "/get_started" },
-      { text: "Pricing", link: "/guides/Pricing/" },
+      { text: "Pricing", link: "/guides/Pricing/pricing" },
     ],
     logo: "https://raw.githubusercontent.com/ForkbombEu/DIDroom/45a5ffb737d81c33449bf2d394627a88ddbfc1d0/images/DIDroom_logo.svg",
     sidebar: generateSidebar(vitepressSidebarOptions),
     socialLinks: [
       { icon: "github", link: "https://github.com/forkbombeu/didroom" },
-      { icon: "linkedin", link: "https://linkedin.com/company/forkbomb" },
+      { icon: "linkedin", link: "https://linkedin.com/company/forkbomb" }
     ],
 
     footer: {

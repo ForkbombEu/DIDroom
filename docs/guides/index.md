@@ -1,1 +1,3 @@
-# Guides
+---
+title: 📚 Guides
+---

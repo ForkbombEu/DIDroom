@@ -3,30 +3,45 @@
 layout: home
 
 hero:
-  name: "Didroom ecosystem"
-  text: "🔌Digital Identity into your solution:\n\n  • Web dashboard\n  • Microservices\n  • Android/iOS apps\n\n"
+  name: "DIDroom ecosystem"
+  text: "🔌plug Digital Identity into your solution:\n\n  • Web dashboard\n  • Microservices\n  • Android/iOS apps\n\n"
   tagline: "DIDroom is a customizable identity solution, EUDI-ARF compliant, and built with security and decentralization in mind.\nRuns: ☁️SaaS, 🏭On-Premises, 🛠mixed\n\n"
   image:
     src: https://raw.githubusercontent.com/ForkbombEu/DIDroom/45a5ffb737d81c33449bf2d394627a88ddbfc1d0/images/didroom_logo_emblem.svg
   actions:
-    - theme: brand
-      text: 🏁 Get started
+    - theme: alt
+      text: 🏁 See the Docs
       link: /get_started.md
     - theme: brand
-      text: JOIN NOW ↗
+      text: Open the Dashboard ↗
       link: https://dashboard.didroom.com/register
-    - theme: alt 
-      text: What is Didroom? ↗
-      link: https://forkbomb.solutions/solutions/didroom
+    - theme: brand 
+      text: Install the Wallet 📱
+      link: https://didroom.com/apps
 
 features:
-  - title: Customizable identity solution
-    details: Tailor Didroom to fit your unique identity management needs, ensuring seamless integration into your existing infrastructure.
-  - title: EUDI-ARF Compliance
-    details: Didroom adheres to the European Union Digital Identity and Attribute (EUDI-ARF) framework, ensuring compliance with regulatory standards and data protection laws.
-  - title: Security with Zenroom
-    details: Zenroom provides robust cryptographic security, safeguarding sensitive data and ensuring secure transactions.
+  - title: Customizable Identity solution
+    details: Tailor DIDroom to fit your unique identity management needs, ensuring seamless integration into your existing infrastructure thanks to Zenroom and its ecosystem.
+  - title: EUDI-ARF and more
+    details: DIDroom is compliant to the European Union Digital Identity and Attribute (EUDI-ARF) framework, it supports W3C-VC as well the zero knowledge proof schemes BBS and Coconut.
+  - title: 100% Open Source 
+    details: The DIDroom Dashboard, the microservices and the mobile apps are fully open source, modular and extendable.
   - title: Decentralization with Dyne.org DID
     details: Dyne.org Decentralized Identifiers (DIDs) ensure decentralized and tamper-resistant identity management, enhancing privacy and control over personal data.
 
 ---
+
+
+<pre>
+
+
+
+
+</pre>
+
+ Install the Wallet (Android/iOS)
+
+|  |  |  |   
+|--|--|--|
+|<a href="https://play.google.com/store/apps/details?id=com.didroom.wallet"><img src="./guides/images/wallet/android-store.png" alt="android" width="200"/></a> | | <a href="https://apps.apple.com/us/app/didroom-wallet/id6670396049"><img src="./guides/images/wallet/ios-store.png" alt="iOS" width="200"/></a>|
+|<img src="./guides/images/wallet/wallet-android-qr.png" alt="android-qr" width="200"/> | | <img src="./guides/images/wallet/wallet-ios-store.png" alt="ios-qr" width="200"/> | 

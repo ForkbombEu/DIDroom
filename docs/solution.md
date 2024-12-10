@@ -1,10 +1,15 @@
+---
+title: 💡 The Solution
+order: 30
+---
+
 # 💡 The Solution
 
 Our solution is divided into different repositories, each focusing on a specific component. This modular approach allows us to maintain flexibility and scalability, enabling users to customize and integrate the solution according to their specific needs and requirements.
 
-## DIDroom Control Room (Dashboard)
+## DIDroom Dashboard (Dashboard)
 
-The DIDroom Control Room/Dashboard serves as the central hub for managing decentralized identity solutions. It provides a user-friendly interface for configuring settings, monitoring performance, and accessing key functionalities.
+The DIDroom Dashboard/Dashboard serves as the central hub for managing decentralized identity solutions. It provides a user-friendly interface for configuring settings, monitoring performance, and accessing key functionalities.
 
 The core features of the Control Room are:
 

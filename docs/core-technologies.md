@@ -1,3 +1,8 @@
+---
+title: 🏗️ Core Technologies
+order: 20
+---
+
 # 🏗️ Core Technologies
 
 ## 🔐 Zenroom

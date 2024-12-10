@@ -17,7 +17,7 @@ Learn how to set up a new instance of DiDRoom to get started with decentralized 
 
 Explore the process of self-hosting the DiDRoom dashboard to gain full control over your infrastructure and data.
 
-- [Self-Host the Dashboard Guide](./setup_dashboard.md)
+- [Self-Host the Dashboard Guide](./setup.md)
 
 ## Deploy Microservices 🚀
 

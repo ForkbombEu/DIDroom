@@ -36,7 +36,7 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 > For folks that wants to deploy and manage the infrastructure that powers Didroom.
 >
 > - [Setup an instance](/guides/Sysadmin/setup)
-> - [Self host the dashboard](/guides/Sysadmin/setup_dashboard)
+> - [Self host the dashboard](/guides/Sysadmin/setup)
 > - [Deploy microservices](/guides/Sysadmin/deploy_microservices.md)
 
 > [!IMPORTANT] Organization administrators
@@ -55,7 +55,7 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 >
 > For individuals that wants to use the Wallet Holder App to manage their decentralized identities and digital credentials securely. Here we walks you through the process of installing and using the Wallet Holder App to store, view, and share identity information with ease.
 >
-> - [Create an identity / keyring](/guides/Wallet/register.md)
+> - [Create an identity / keyring](/guides/Wallet/sign-up.md)
 > - [Request a credential](/guides/Wallet/get_credential.md)
 > - [Present a credential](/guides/Wallet/present_credential.md)
 > - [Get part to an organization](/guides/Wallet/join_org.md)

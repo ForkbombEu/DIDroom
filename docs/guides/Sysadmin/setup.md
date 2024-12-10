@@ -10,7 +10,7 @@ order: 10
 For users who prefer full control over their infrastructure and data, Didroom supports on-premise deployment. Follow these steps to deploy the DIDroom Dashboard on your own infrastructure:
 
 ::: tip
-If you are unfamiliar with servers, devops and unix commands look also at the [Software as a service](/guides/1_orgadmin/) section that will allow you to define a credential issuance flow in minutes! Without installing anything on your servers.
+If you are unfamiliar with servers, devops and unix commands look also at the [Software as a service](/guides/Orgadmin/) section that will allow you to define a credential issuance flow in minutes! Without installing anything on your servers.
 :::
 
 > [!IMPORTANT] Checklist

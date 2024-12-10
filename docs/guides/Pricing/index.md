@@ -31,24 +31,24 @@ Below a description of the individual features.
 
 ### Organizations
 - Description: an Organization contains users, Credential Issuance and Verification, and Microservices setup.  
-- Info: [create Organization](../1_orgadmin/create)
+- Info: [create Organization](../Orgadmin/create)
 
 ### Issuance flows and Verification flows
 - Description: Credential Issuance and Verification flows define what a Credential contains, how it is issued and how it is verified. Issuance and Verification are operated by Microservices.  
-- Info: [Create an Issuance Flow](../1_orgadmin/issuance_flow) and [Create a Verification Flow](../3_verifier/2_verification_flow) 
+- Info: [Create an Issuance Flow](../Orgadmin/issuance_flow) and [Create a Verification Flow](../Verifier/verification_flow) 
 
 ### Microservices Deployment 
 
 - Description: Microservices operate Credential Issuance and Verification. The Wallet and Verifier apps exchange information with the Microservices. 
-- Info: [Deploy Microservices](../4_sysadmin/deploy_microservices) 
+- Info: [Deploy Microservices](../Sysadmin/deploy_microservices) 
 
 ### Control Room
 - Description: the DIDroom Dashboard is the main web application to setup Organizations, users, Credential Issuance and Verification Flows and Microservices.
-- Info: [DIDroom Dashboard](../1_orgadmin/index) 
+- Info: [DIDroom Dashboard](../Orgadmin/index) 
 
 ### Admin Dashboard
 - Description: the DIDroom Admin Dashboard is the backend of the whole DIDroom ecosystem. It is based on [Starters SaaS](https://github.com/dyne/starters) which itself is powered by [Pocketbase](https://github.com/pocketbase/pocketbase)
-- Info: [System Administrator](../4_sysadmin/)
+- Info: [System Administrator](../Sysadmin/)
 
 ### Public credentials      
 - Description: this feature allows you to have your credential Issuance flow visible by anyone who installs the DIDroom Wallet and Verifier app. The Wallet users can request the credentials by clicking on the credential from the Wallet's home.

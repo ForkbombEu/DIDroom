@@ -7,8 +7,8 @@ const vitepressSidebarOptions = {
   useTitleFromFrontmatter: true,
   sortMenusByFrontmatterOrder: true,
   frontmatterOrderDefaultValue: 999,
-  includeFolderIndexFile: true,
-  useFolderLinkFromIndexFile: true,
+  includeFolderIndexFile: false,
+  useFolderLinkFromIndexFile: false,
   manualSortFileNameByPriority: [
     "intro.md",
     "core-technologies.md",

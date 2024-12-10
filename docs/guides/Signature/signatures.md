@@ -1,6 +1,6 @@
 ---
-title: 🖊️ Signatures (*AdES)  
-order: 10
+title: Intro to Signatures   
+order: 1
 ---
 
 # Signatures

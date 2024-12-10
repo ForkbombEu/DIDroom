@@ -16,7 +16,7 @@ hero:
       text: JOIN NOW ↗
       link: https://dashboard.didroom.com/register
     - theme: alt 
-      text: What is Didroom? ↗
+      text: Install the wallet? ↗
       link: https://forkbomb.solutions/solutions/didroom
 
 features:
@@ -28,5 +28,20 @@ features:
     details: Zenroom provides robust cryptographic security, safeguarding sensitive data and ensuring secure transactions.
   - title: Decentralization with Dyne.org DID
     details: Dyne.org Decentralized Identifiers (DIDs) ensure decentralized and tamper-resistant identity management, enhancing privacy and control over personal data.
+  - title: Android 
+    details: Install the wallet on Android 
+    link: https://play.google.com/store/apps/details?id=com.didroom.wallet
+  - title: iOS 
+    details: Install the wallet on iOS
+    link: https://apps.apple.com/us/app/didroom-wallet/id6670396049
+
 
 ---
+-----------------
+
+# Install the Wallet
+
+|  | |         |  
+|--|--|--|
+|<a href="https://play.google.com/store/apps/details?id=com.didroom.wallet"><img src="./guides/images/wallet/android-store.png" alt="android" width="300"/></a> | | <a href="https://apps.apple.com/us/app/didroom-wallet/id6670396049"><img src="./guides/images/wallet/ios-store.png" alt="iOS" width="300"/></a>|
+|<img src="./guides/images/wallet/wallet-android-qr.png" alt="android-qr" width="300"/> | | <img src="./guides/images/wallet/wallet-ios-store.png" alt="ios-qr" width="300"/> | 

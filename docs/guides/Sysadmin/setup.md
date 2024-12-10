@@ -5,7 +5,7 @@ order: 10
 
 # Setup the Dashboard
 
-#### for 🛠️ System Administrator
+#### for 🛠️ System Administrators
 
 For users who prefer full control over their infrastructure and data, Didroom supports on-premise deployment. Follow these steps to deploy the DIDroom Dashboard on your own infrastructure:
 

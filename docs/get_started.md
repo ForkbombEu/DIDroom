@@ -1,3 +1,10 @@
+---
+title: 🏁 Get started
+order: 40
+---
+
+
+
 # 🏁 Get started
 
 Welcome to the Didroom Get Started guide! 🚀 We're thrilled to have you embark on this journey with us. Whether you're a seasoned **system administrator**, a savvy **organization administrator**, an enthusiastic **wallet holder**, or a meticulous **verifier**, this section is tailor-made to provide you with comprehensive, step-by-step instructions crafted specifically for your role within the Didroom ecosystem.

@@ -59,7 +59,7 @@ This contains the core logic of the Template. The Custom code can:
  - Create and process data on the fly
  - Return the processed data: some types of Template, have a certain return data format (e.g. Authorization Template must return a JSON object named "data") but each template can send the output to a REST API or write it into a Database. The parameters relevant to REST APIs and Parameters must be loaded from "Zencode data" (see Presets for examples). 
 
-| Templates Editor  |  
+| Template Editor  |  
 |--|
 | <img src="../images/dashboard/template-editor-long.png" alt="template-editor" width="1000"/> |  
 

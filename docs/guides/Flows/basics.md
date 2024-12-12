@@ -23,6 +23,13 @@ The templates contain the core logic that govern the issuance and verification f
 
 - **Where are templates executed?**
   Depending if it's an *Authorization*, *Issuance* or *Verification*, the templates are executed inside a Microservice, inside the Wallet or inside the Verifier App [more about this later].
+
+See how the Template Editor looks like:   
+  
+| Template Editor  |  
+|--|
+| <img src="../images/dashboard/template-editor-long.png" alt="template-editor" width="1000"/> |  
+
  
 
 ## Issuance and Verification Flows
@@ -38,6 +45,13 @@ Flows define the full behaviour of credential issuance and verification. While t
 ## Microservices
 
 Credential Issuance and Verification are (partly) executed in Microservices. The Microservices are configured in the Dashboard, the Dashboard also provides you with the actuall Microservices code, with different deployment possibilities.  
+
+See below the *Home > Organization > Microservices* page:
+
+
+| Microservices list and Deployment  |  
+|--|
+| <img src="../images/dashboard/microservices-manual-deployment-small.png" alt="microservices-manual-deployment-small" width="1000"/> |  
 
 
 ## Toolchain and components

@@ -43,10 +43,9 @@ export default defineConfig({
       {
         text: "Guide",
         items: [
-          { text: "Organization admins", link: "/guides/Orgadmin/intro" },
           { text: "Wallet App", link: "/guides/Wallet/wallet" },
-          { text: "Verifier App", link: "/guides/Verifier/verifier" },
-		  { text: "Credential issuance", link: "guides/Orgadmin/issuance_flow" },	  
+		  { text: "Credential issuance", link: "guides/Flows/basics" },	 
+		  { text: "Microservices", link: "guides/Flows/microservices" },	 
           { text: "Signatures", link: "/guides/Signature/signatures" },
 		  { text: "Sysadmins", link: "/guides/Sysadmin/sysadmin" },
         ],

@@ -23,7 +23,7 @@ export default defineConfig({
   base: "/",
   title: " | DIDroom Identity Solution ",
   description: "Empower your Identity strategy: customize, plug, deploy",
-  lang: 'en-US',
+  lang: "en-US",
 
   lastUpdated: true,
   metaChunk: true,
@@ -34,7 +34,14 @@ export default defineConfig({
       {},
       `window.$crisp=[];window.CRISP_WEBSITE_ID="8dd97823-ddac-401e-991a-7498234e4f00";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();`,
     ],
-	 ['link', { rel: 'icon', type: 'image/x-icon', href: './public/favicon/favicon.ico' }],
+    [
+      "link",
+      {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "./public/favicon/favicon.ico",
+      },
+    ],
   ],
 
   themeConfig: {
@@ -44,10 +51,10 @@ export default defineConfig({
         text: "Guide",
         items: [
           { text: "Wallet App", link: "/guides/Wallet/wallet" },
-		  { text: "Credential issuance", link: "guides/Flows/basics" },	 
-		  { text: "Microservices", link: "guides/Flows/microservices" },	 
+          { text: "Credential issuance", link: "guides/Flows/basics" },
+          { text: "Microservices", link: "guides/Flows/microservices" },
           { text: "Signatures", link: "/guides/Signature/signatures" },
-		  { text: "Sysadmins", link: "/guides/Sysadmin/sysadmin" },
+          { text: "Sysadmins", link: "/guides/Sysadmin/sysadmin" },
         ],
       },
       { text: "Get started", link: "/get_started" },
@@ -57,7 +64,7 @@ export default defineConfig({
     sidebar: generateSidebar(vitepressSidebarOptions),
     socialLinks: [
       { icon: "github", link: "https://github.com/forkbombeu/didroom" },
-      { icon: "linkedin", link: "https://linkedin.com/company/forkbomb" }
+      { icon: "linkedin", link: "https://linkedin.com/company/forkbomb" },
     ],
 
     footer: {
@@ -65,6 +72,9 @@ export default defineConfig({
         'Released under the <a href="https://github.com/forkbombeu/didroom/blob/main/LICENSE">AGPLv3 License</a>.',
       copyright:
         'Copyleft 🄯 2023-present <a href="https://forkbomb.solutions">Forkbomb B.V.</a>',
+    },
+    search: {
+      provider: "local",
     },
   },
   markdown: {

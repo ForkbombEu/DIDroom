@@ -1,1 +1,0 @@
-const s="/assets/android-store.ZCZtkPhD.png",t="/assets/ios-store.CNKrBG7P.png",o="/assets/wallet-android-qr.CtHyLk9N.png",a="/assets/wallet-ios-store.CIECqo3C.png";export{s as _,t as a,o as b,a as c};

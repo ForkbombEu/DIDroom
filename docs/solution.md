@@ -69,7 +69,7 @@ The Verifier App provides tools for verifying the authenticity and validity of d
 ::: tip RESOURCES
 [GitHub](https://github.com/forkbombeu/verifier)
 
-[Latest relase](https://github.com/ForkbombEu/verifier/releases/latest/download/wallet.apk)
+[Latest relase](https://github.com/ForkbombEu/verifier/releases/latest/download/verifier.apk)
 :::
 
 ## DIDroom web components
@@ -77,7 +77,7 @@ The Verifier App provides tools for verifying the authenticity and validity of d
 DIDroom Web Components hold all the UI web components used across all the projects to ensure a coherent Atomic design and allow for white-labeling.
 
 ::: tip RESOURCES
-[Storybook](https://forkbombeu.github.io/DIDroom-components)
+[Storybook](https://forkbombeu.github.io/didroom-components)
 
 [GitHub](https://github.com/forkbombeu/DIDroom-components)
 :::

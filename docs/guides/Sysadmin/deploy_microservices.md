@@ -36,7 +36,7 @@ order: 20
 - Then From the *Microservices* page, click on "Download microservices"
 - The Microservices page should look like this:
 
-![Microservices-manual-deployment](../images/microservices/microservices-manual-deployment.png)
+![Microservices-manual-deployment](../images/dashboard/microservices-manual-deployment.png)
 
 ## Download and deploy the Microservices
 

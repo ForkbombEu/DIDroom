@@ -1,5 +1,6 @@
 diagrams/plantuml.jar
 docs/.vitepress/dist
 docs/.vitepress/cache
+docs/pr-preview
 node_modules
 

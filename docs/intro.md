@@ -1,3 +1,8 @@
+---
+title: 📖 Introduction
+order: 10
+---
+
 # 📖 Introduction
 
 Welcome to Didroom – your gateway to decentralized identity management and secure communication. Didroom empowers individuals and organizations to take control of their digital identities while ensuring privacy and security.
@@ -14,7 +19,7 @@ You can quickly test, plug and deploy by using our service at [dashboard.didroom
 
 Didroom offers a seamless and intuitive experience for managing decentralized identities and secure communication. Here's how it works:
 
-- **Define services and credentials:** Via the Didroom Control Room, users can define services, credentials, and claims services according to their specific requirements.
+- **Define services and credentials:** Via the DIDroom Dashboard, users can define services, credentials, and claims services according to their specific requirements.
 
 - **Generate Openid4VCI microservices:** Users can generate Openid4VCI microservices directly from the bloom using the Control Room, simplifying the process of creating and deploying identity verification services.
 
@@ -59,7 +64,7 @@ these provide the foundational elements for identity management and cryptographi
 > [!NOTE] 📑
 > For detailed description of each component please refer to [💡 The Solution](/solution)
 
-1.  Didroom Control Room / Dashboard
+1.  DIDroom Dashboard / Dashboard
 1.  Didroom Microservices
 1.  Wallet Holder App
 1.  Verifier App

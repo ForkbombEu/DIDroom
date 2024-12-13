@@ -1,10 +1,15 @@
+---
+title: 💡 The Solution
+order: 30
+---
+
 # 💡 The Solution
 
 Our solution is divided into different repositories, each focusing on a specific component. This modular approach allows us to maintain flexibility and scalability, enabling users to customize and integrate the solution according to their specific needs and requirements.
 
-## DIDroom Control Room (Dashboard)
+## DIDroom Dashboard (Dashboard)
 
-The DIDroom Control Room/Dashboard serves as the central hub for managing decentralized identity solutions. It provides a user-friendly interface for configuring settings, monitoring performance, and accessing key functionalities.
+The DIDroom Dashboard/Dashboard serves as the central hub for managing decentralized identity solutions. It provides a user-friendly interface for configuring settings, monitoring performance, and accessing key functionalities.
 
 The core features of the Control Room are:
 
@@ -64,7 +69,7 @@ The Verifier App provides tools for verifying the authenticity and validity of d
 ::: tip RESOURCES
 [GitHub](https://github.com/forkbombeu/verifier)
 
-[Latest relase](https://github.com/ForkbombEu/verifier/releases/latest/download/wallet.apk)
+[Latest relase](https://github.com/ForkbombEu/verifier/releases/latest/download/verifier.apk)
 :::
 
 ## DIDroom web components
@@ -72,7 +77,7 @@ The Verifier App provides tools for verifying the authenticity and validity of d
 DIDroom Web Components hold all the UI web components used across all the projects to ensure a coherent Atomic design and allow for white-labeling.
 
 ::: tip RESOURCES
-[Storybook](https://forkbombeu.github.io/DIDroom-components)
+[Storybook](https://forkbombeu.github.io/didroom-components)
 
 [GitHub](https://github.com/forkbombeu/DIDroom-components)
 :::

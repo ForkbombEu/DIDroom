@@ -1,3 +1,8 @@
+---
+title: 🏗️ Core Technologies
+order: 20
+---
+
 # 🏗️ Core Technologies
 
 ## 🔐 Zenroom
@@ -22,7 +27,7 @@ Slangroom enhances the Zencode language of Zenroom by allowing the addition of p
 
 [Documentation](https://dyne.org/slangroom)
 
-[GitHub](https://github.com/syne/slangroom)
+[GitHub](https://github.com/dyne/slangroom)
 
 :::
 

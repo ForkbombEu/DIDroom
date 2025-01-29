@@ -3,22 +3,24 @@ title: Delete account
 order: 10
 ---
 
-
 # Delete account
 
-**Last Updated:** [10.12.2024]
+**Last Updated:** [13.12.2024]
 
-Before you proceed, please read the privacy policies of the DIDroom Wallet, Verifier, and Dashboard.
+If you wish to delete your data from our database, please follow these steps:
 
-## Step 1
+1. **Send an Email:**  
+   Write an email to `info@forkbomb.eu`.
 
-Write us at [remove-didroom-account@forkbomb.eu](mailto:remove-didroom-account@forkbomb.eu)
+2. **Use the Registered Email Address:**  
+   Make sure to send the email from the address you used to sign up for DIDroom. This ensures we can verify your identity and process your request.
 
-## Step 2
+3. **Request Data Removal:**  
+   Clearly state in the email that you would like to have your data removed from our system.
 
-(Coming soon)
+Once we receive your request, we will verify your identity and confirm the data deletion process.
 
-## Step 3 
+> **Note:**  
+> Data deletion is irreversible. Once your data is removed, you will no longer have access to your account or associated credentials.
 
-(Coming also soon)
-
+If you have any questions or need assistance, feel free to reach out to us at the same email address.

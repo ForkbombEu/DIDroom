@@ -40,7 +40,7 @@ features:
 
 </pre>
 
-#### Install the Wallet (Android/iOS) using the QRs below or installed the Verifier [here](http://192.168.0.233:5173/guides/Verifier/verifier.html#install-the-app)
+#### Install the Wallet (Android/iOS) using the QRs below or installed the Verifier [here](https://didroom.com/guides/Verifier/verifier.html#install-the-app)
 
 |  |  |  |   
 |--|--|--|

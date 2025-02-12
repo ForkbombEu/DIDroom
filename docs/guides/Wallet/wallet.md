@@ -10,7 +10,7 @@ The Wallet App allows the user to creat an account and the same account can be u
 
 | Wallet App screenshot  |  
 |--|
-| <img src="../images/wallet/wallet-android-credlist.jpg" alt="wallet-android-credlist" width="300"/> |  
+| <img src="../images/mobile/wallet-android-credlist.jpg" alt="wallet-android-credlist" width="300"/> |  
 
 
 
@@ -23,8 +23,8 @@ The app can be installed from the Android and iOS stores:
 
 |  | |         |  
 |--|--|--|
-|[![Android](../images/wallet/android-store.png)](https://play.google.com/store/apps/details?id=com.didroom.wallet) | |[![iOS](../images/wallet/ios-store.png)](https://apps.apple.com/us/app/didroom-wallet/id6670396049)  |
-|![Android-QR](../images/wallet/wallet-android-qr.png) | |![iOS-QR](../images/wallet/wallet-ios-store.png)  |
+|[![Android](../images/mobile/android-store.png)](https://play.google.com/store/apps/details?id=com.didroom.wallet) | |[![iOS](../images/mobile/ios-store.png)](https://apps.apple.com/us/app/id6670396049)  |
+|![Android-QR](../images/mobile/wallet-android-qr.png) | |![iOS-QR](../images/mobile/wallet-ios-qr.png)  |
 
 
 ## Features
@@ -40,7 +40,7 @@ The Wallet can also be deployed as a web application, offering most of the app f
 
 | Wallet App deployed on web  |  
 |--|
-| <img src="../images/wallet/wallet-web.png" alt="wallet-web" width="1000"/> |  
+| <img src="../images/mobile/wallet-web.png" alt="wallet-web" width="1000"/> |  
 
 
 ## White-labeling
@@ -54,4 +54,4 @@ package](https://www.npmjs.com/package/@didroom/components) via CI.
 
 |  | 
 |--|
-|[![Storybook](../images/wallet/didroom-components-storybook.png)](https://forkbombeu.github.io/didroom-components/) | 
+|[![Storybook](../images/mobile/didroom-components-storybook.png)](https://forkbombeu.github.io/didroom-components/) | 

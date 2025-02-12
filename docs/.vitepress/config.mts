@@ -21,7 +21,7 @@ const vitepressSidebarOptions = {
 
 export default defineConfig({
   base: "/",
-  title: " | DIDroom Identity Solution ",
+  title: "EUDI Wallet",
   description: "Empower your Identity strategy: customize, plug, deploy",
   lang: "en-US",
 
@@ -51,6 +51,7 @@ export default defineConfig({
         text: "Guide",
         items: [
           { text: "Wallet App", link: "/guides/Wallet/wallet" },
+		  { text: "Verifier App", link: "/guides/Verifier/verifier" },
           { text: "Credential issuance", link: "guides/Flows/basics" },
           { text: "Microservices", link: "guides/Flows/microservices" },
           { text: "Signatures", link: "/guides/Signature/signatures" },
@@ -63,7 +64,7 @@ export default defineConfig({
     logo: "https://raw.githubusercontent.com/ForkbombEu/DIDroom/45a5ffb737d81c33449bf2d394627a88ddbfc1d0/images/DIDroom_logo.svg",
     sidebar: generateSidebar(vitepressSidebarOptions),
     socialLinks: [
-      { icon: "github", link: "https://github.com/forkbombeu/didroom" },
+      { icon: "github", link: "https://github.com/topics/didroom" },
       { icon: "linkedin", link: "https://linkedin.com/company/forkbomb" },
     ],
 

@@ -55,6 +55,7 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 >
 > For individuals that wants to use the Wallet Holder App to manage their decentralized identities and digital credentials securely. Here we walks you through the process of installing and using the Wallet Holder App to store, view, and share identity information with ease.
 >
+> - [Install the Wallet](/guides/Wallet/wallet.html#install-the-app)
 > - [Create an identity / keyring](/guides/Wallet/sign-up.md)
 > - [Request a credential](/guides/Wallet/get_credential.md)
 > - [Present a credential](/guides/Wallet/present_credential.md)
@@ -65,6 +66,7 @@ Below, you'll find detailed descriptions of each guide, carefully curated to emp
 >
 > For individuals that wants to utilize the Verifier App to verify the authenticity and validity of decentralized identities and digital credentials. Here we outlines how to install and use the Verifier App to validate identity claims and ensure compliance with regulatory requirements.
 >
+> - [Install the Verifier](/guides/Verifier/verifier.html#install-the-app)
 > - [Get part of an organization](/guides/Verifier/join_org.md)
 > - [Select a verification flow](/guides/Verifier/verification_flow.md)
 > - [Verify a credential](/guides/Verifier/verify.md)

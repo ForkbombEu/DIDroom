@@ -37,11 +37,13 @@ features:
 
 
 
+
 </pre>
 
- Install the Wallet (Android/iOS)
+#### Install the Wallet (Android/iOS) using the QRs below or installed the Verifier [here](http://192.168.0.233:5173/guides/Verifier/verifier.html#install-the-app)
 
 |  |  |  |   
 |--|--|--|
-|<a href="https://play.google.com/store/apps/details?id=com.didroom.wallet"><img src="./guides/images/wallet/android-store.png" alt="android" width="200"/></a> | | <a href="https://apps.apple.com/us/app/didroom-wallet/id6670396049"><img src="./guides/images/wallet/ios-store.png" alt="iOS" width="200"/></a>|
-|<img src="./guides/images/wallet/wallet-android-qr.png" alt="android-qr" width="200"/> | | <img src="./guides/images/wallet/wallet-ios-store.png" alt="ios-qr" width="200"/> | 
+|<a href="https://play.google.com/store/apps/details?id=com.didroom.wallet"><img src="./guides/images/mobile/android-store.png" alt="android" width="200"/></a> | | <a href="https://apps.apple.com/us/app/didroom-wallet/id6670396049"><img src="./guides/images/mobile/ios-store.png" alt="iOS" width="200"/></a>|
+|<img src="./guides/images/mobile/wallet-android-qr.png" alt="android-qr" width="200"/> | | <img src="./guides/images/mobile/wallet-ios-qr.png" alt="ios-qr" width="200"/> | 
+

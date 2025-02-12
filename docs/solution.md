@@ -22,9 +22,10 @@ The core features of the Control Room are:
   - Customization of the Control Room menu entries
 
 ::: tip RESOURCES
+[Dashboard](https://dashboard.didroom.com)
+
 [GitHub](https://github.com/forkbombeu/signroom)
 
-[Public beta](https://dashboard.didroom.com)
 :::
 
 ## DIDroom Mobile libs (Mobile Zencode)
